@@ -77,8 +77,8 @@ const jsonLd = {
       address: {
         "@type": "PostalAddress",
         streetAddress: LOCATION.street,
-        addressLocality: "Jakarta Selatan",
-        addressRegion: "DKI Jakarta",
+        addressLocality: LOCATION.city,
+        addressRegion: LOCATION.province,
         postalCode: LOCATION.postalCode,
         addressCountry: "ID",
       },
@@ -215,8 +215,8 @@ const REASONS = [
     desc: "Dalam satu paket, Anda bebas menentukan berapa kamera yang dipasang di dalam dan berapa yang di luar. Kombinasi disesuaikan saat survei.",
   },
   {
-    title: "Toko fisik di Cilandak, buka 24 jam",
-    desc: "Kami punya toko di Cilandak, Jakarta Selatan, yang buka 24 jam. Kamera bisa dilihat langsung sebelum dipasang.",
+    title: "Kantor fisik di Ciledug, buka 24 jam",
+    desc: "Kami punya kantor fisik di Ciledug, Kota Tangerang, yang buka 24 jam. Kamera bisa dilihat langsung sebelum dipasang.",
   },
 ];
 
@@ -542,7 +542,7 @@ export default function Home() {
         <div className="container-max">
           <ScrollReveal>
             <div className="label-tag">Lokasi</div>
-            <h2 className="section-title">Toko kami</h2>
+            <h2 className="section-title">Kantor kami</h2>
           </ScrollReveal>
           <ScrollReveal delay={100} className="mt-8">
             <div className="card max-w-md hover:border-accent/40 transition-colors">
@@ -561,7 +561,7 @@ export default function Home() {
                 href={LOCATION.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                id="maps-link-cilandak"
+                id="maps-link-kantor"
                 className="btn-outline mt-5 inline-flex"
               >
                 <IconMapPin />

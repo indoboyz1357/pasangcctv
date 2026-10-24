@@ -17,22 +17,22 @@ export const CONTACT = {
 } as const;
 
 export const LOCATION = {
-  name: "PasangCCTV Cilandak",
-  street: "Jl. Bango IV No.49B, RT.10/RW.3",
-  area: "Pd. Labu, Kec. Cilandak",
-  city: "Jakarta Selatan",
-  postalCode: "12450",
-  province: "DKI Jakarta",
+  name: "PasangCCTV Tangerang",
+  street: "Mulya IV RT 001/RW018 No. 43A",
+  area: "Paninggilan, Kec. Ciledug",
+  city: "Kota Tangerang",
+  postalCode: "15153",
+  province: "Banten",
   country: "ID",
   fullAddress:
-    "Jl. Bango IV No.49B, RT.10/RW.3, Pd. Labu, Kec. Cilandak, Jakarta Selatan 12450",
+    "Mulya IV RT 001/RW018 No. 43A, Paninggilan, Kec. Ciledug, Kota Tangerang, Banten 15153",
   openingHours: "Buka 24 jam",
   coordinates: {
-    lat: -6.3044736,
-    lng: 106.8078669,
+    lat: -6.247047,
+    lng: 106.712742,
   },
   googleMapsUrl:
-    "https://www.google.com/maps/place/Jasa+Pasang+CCTV+-+CCTVGO+Cilandak/@-6.3044736,106.8078669,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69efd01ecd2e51:0x69ea2f25816e4ecd!8m2!3d-6.3044736!4d106.8078669!16s%2Fg%2F11nw70wl3z",
+    "https://www.google.com/maps/search/?api=1&query=Mulya+IV+RT+001%2FRW018+No.+43A+Paninggilan+Ciledug+Kota+Tangerang+Banten+15153",
 } as const;
 
 export const SERVICE_AREA = "JABODETABEK";

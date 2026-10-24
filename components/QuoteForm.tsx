@@ -125,7 +125,7 @@ export function QuoteForm() {
           id="quote-area"
           name="area"
           type="text"
-          placeholder="Contoh: Cilandak, Jakarta Selatan"
+          placeholder="Contoh: Ciledug, Tangerang"
           value={form.area}
           onChange={handleChange}
           className={inputClass}

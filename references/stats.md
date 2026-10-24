@@ -7,7 +7,7 @@ Aturan: hanya angka dan fakta di file ini yang boleh dipakai di situs. Jangan di
 - WhatsApp: +6281919037533 (tautan: https://wa.me/6281919037533)
 
 ## Lokasi
-- Cilandak (satu-satunya toko): Jl. Bango IV No.49B, RT.10/RW.3, Pd. Labu, Kec. Cilandak, Jakarta Selatan 12450. Telepon 0815-8606-9939. Buka 24 jam. Koordinat -6.3044736, 106.8078669. Tautan Google Maps: https://www.google.com/maps/place/Jasa+Pasang+CCTV+-+CCTVGO+Cilandak/@-6.3044736,106.8078669,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69efd01ecd2e51:0x69ea2f25816e4ecd!8m2!3d-6.3044736!4d106.8078669!16s%2Fg%2F11nw70wl3z
+- Kantor / Toko: Mulya IV RT 001/RW018 No. 43A, Paninggilan, Kec. Ciledug, Kota Tangerang, Banten 15153. Telepon 0815-8606-9939. Buka 24 jam. Koordinat -6.247047, 106.712742. Tautan Google Maps: https://www.google.com/maps/search/?api=1&query=Mulya+IV+RT+001%2FRW018+No.+43A+Paninggilan+Ciledug+Kota+Tangerang+Banten+15153
 
 ## Area layanan
 JABODETABEK (Jakarta, Bogor, Depok, Tangerang, Bekasi).
