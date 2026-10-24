@@ -13,7 +13,7 @@ export function Footer() {
               <span className="text-white">CCTV</span>
             </div>
             <p className="text-text-secondary text-sm leading-relaxed">
-              Jasa pasang CCTV di JABODETABEK. Survei, pemasangan, dan setting
+              Jasa pasang CCTV di Jabodetabek. Survei, pemasangan, dan setting
               ke HP dikerjakan oleh teknisi.
             </p>
             <a

@@ -28,7 +28,7 @@ Satu keyword utama hanya untuk satu halaman. Beranda tidak mengejar "paket cctv"
 - Slug pendek, huruf kecil, dipisah tanda hubung.
 - HTML semantik: header, nav, main, article, section, footer.
 - Tombol WhatsApp terlihat di layar HP tanpa scroll jauh, dan ada di footer.
-- Tautan WhatsApp memakai format https://wa.me/6285281300610 dengan teks pesan terisi otomatis yang menyebut halaman asal.
+- Tautan WhatsApp memakai format https://wa.me/6281919037533 dengan teks pesan terisi otomatis yang menyebut halaman asal.
 
 ### Gambar
 - Format WebP, atribut width dan height diisi untuk mencegah CLS.
@@ -53,7 +53,7 @@ Satu keyword utama hanya untuk satu halaman. Beranda tidak mengejar "paket cctv"
 
 ### SEO lokal
 - Nama, alamat, dan nomor identik dengan references/stats.md, di footer, halaman kontak, dan schema.
-- Schema LocalBusiness: satu entri per toko (Cilandak dan Kelapa Gading) memakai alamat persis dari stats.md. Jam buka, koordinat, dan rating hanya dimasukkan jika sudah ada di stats.md. Selama belum ada, jangan dimasukkan.
+- Schema LocalBusiness: satu entri untuk kantor Ciledug, memakai alamat persis dari stats.md. Jam buka, koordinat, dan rating hanya dimasukkan jika sudah ada di stats.md. Selama belum ada, jangan dimasukkan.
 - Tombol ke Google Maps berupa tautan biasa, bukan iframe, supaya halaman tidak lambat.
 
 ## Beranda (/)

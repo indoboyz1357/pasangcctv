@@ -7,7 +7,7 @@ Aturan: hanya angka dan fakta di file ini yang boleh dipakai di situs. Jangan di
 - WhatsApp: +6281919037533 (tautan: https://wa.me/6281919037533)
 
 ## Lokasi
-- Kantor / Toko: Mulya IV RT 001/RW018 No. 43A, Paninggilan, Kec. Ciledug, Kota Tangerang, Banten 15153. Telepon 0815-8606-9939. Buka 24 jam. Koordinat -6.247047, 106.712742. Tautan Google Maps: https://www.google.com/maps/search/?api=1&query=Mulya+IV+RT+001%2FRW018+No.+43A+Paninggilan+Ciledug+Kota+Tangerang+Banten+15153
+- Kantor / Toko: Mulya IV RT 001/RW018 No. 43A, Paninggilan, Kec. Ciledug, Kota Tangerang, Banten 15153. Telepon 0819-1903-7533. Buka 24 jam. Koordinat -6.247047, 106.712742. Tautan Google Maps: https://www.google.com/maps/search/?api=1&query=Mulya+IV+RT+001%2FRW018+No.+43A+Paninggilan+Ciledug+Kota+Tangerang+Banten+15153
 
 ## Area layanan
 JABODETABEK (Jakarta, Bogor, Depok, Tangerang, Bekasi).

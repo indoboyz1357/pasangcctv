@@ -11,32 +11,32 @@ export const HOME_FAQ: FaqItem[] = [
   {
     question: "Berapa harga pasang CCTV untuk rumah?",
     answer:
-      "Untuk rumah, paket paling umum adalah 4 kamera Loewix 2MP ColorVu seharga Rp3.700.000, sudah termasuk DVR 4 channel, hard disk 500GB, kabel 80 meter, pemasangan, dan setting ke HP. Kalau ruangan lebih banyak, paket 8 kamera tersedia mulai Rp7.100.000.",
+      "Untuk rumah, paket 4 kamera Loewix 2MP ColorVu seharga Rp3.700.000, sudah termasuk DVR 4 channel, hard disk 500GB, kabel 80 meter, pemasangan, dan setting ke HP. Kalau ruangan lebih banyak, paket 8 kamera tersedia mulai Rp7.100.000.",
   },
   {
     question: "Apakah harga sudah termasuk pemasangan?",
     answer:
-      "Ya. Semua harga paket yang tertera sudah termasuk biaya pemasangan, power supply, konektor, dan setting pemantauan dari HP. Tidak ada biaya tersembunyi.",
+      "Ya. Semua harga paket yang tertera sudah termasuk biaya pemasangan, power supply, konektor, dan setting pemantauan dari HP.",
   },
   {
     question: "Berapa lama proses pemasangan?",
     answer:
-      "Pemasangan 2 hingga 4 kamera biasanya selesai dalam satu hari kerja. Jumlah kamera yang lebih banyak atau kondisi gedung bertingkat bisa memerlukan waktu lebih. Kami sampaikan estimasi setelah survei.",
+      "Lama pemasangan tergantung jumlah kamera dan kondisi gedung. Estimasi waktunya kami sampaikan setelah survei lokasi.",
   },
   {
     question: "Kamera apa yang digunakan?",
     answer:
-      "Paket utama menggunakan kamera Loewix 2MP ColorVu yang menghasilkan rekaman tetap berwarna 24 jam (siang dan malam, dengan bukaan lensa besar dan warm light, bukan inframerah hitam-putih standar). Tersedia juga kamera HiLook dan Hikvision dalam resolusi 2MP dan 5MP sesuai kebutuhan dan anggaran.",
+      "Paket utama menggunakan kamera Loewix 2MP ColorVu. Gambarnya tetap berwarna siang dan malam, karena kamera ini memakai lensa dengan bukaan besar dan lampu warm light, bukan inframerah hitam-putih standar. Tersedia juga kamera HiLook dan Hikvision dalam resolusi 2MP dan 5MP sesuai kebutuhan dan anggaran.",
   },
   {
     question: "Area mana saja yang dilayani?",
     answer:
-      "Kami melayani seluruh wilayah Jabodetabek — Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Teknisi kami berbasis di Ciledug, Kota Tangerang, dan siap datang untuk survei lokasi.",
+      "Kami melayani seluruh wilayah Jabodetabek: Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Teknisi kami berbasis di Ciledug, Kota Tangerang, dan siap datang untuk survei lokasi.",
   },
   {
     question: "Apakah ada biaya tambahan di luar paket?",
     answer:
-      "Tidak ada biaya tersembunyi. Setiap paket sudah mencakup kabel (40m untuk 2 kamera, 80m untuk 4 kamera, 160m untuk 8 kamera, 320m untuk 16 kamera). Jika denah lokasi membutuhkan tarikan kabel lebih panjang dari jatah paket, kelebihan kabel dihitung transparan per meter dan disampaikan sebelum pemasangan.",
+      "Harga paket sudah termasuk pemasangan, power supply, konektor, dan setting ke HP. Kabel yang termasuk: 40 meter untuk 2 kamera, 80 meter untuk 4 kamera, 160 meter untuk 8 kamera, dan 320 meter untuk 16 kamera. Kalau denah lokasi butuh kabel lebih panjang, kebutuhannya kami sampaikan setelah survei.",
   },
   {
     question: "Berapa lama garansi kamera CCTV?",

@@ -13,7 +13,8 @@ export const SITE = {
 export const CONTACT = {
   whatsapp: "+6281919037533",
   whatsappUrl: "https://wa.me/6281919037533",
-  phone: "0815-8606-9939",
+  phone: "0819-1903-7533",
+  phoneE164: "+6281919037533",
 } as const;
 
 export const LOCATION = {

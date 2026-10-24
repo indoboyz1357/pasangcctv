@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: `${SITE.url}/paket-cctv/`,
     images: [
       {
-        url: `${SITE.url}/og/paket.svg`,
+        url: `${SITE.url}/og/paket.png`,
         width: 1200,
         height: 630,
         alt: "PasangCCTV - Harga Paket CCTV Terpasang",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: `Harga Paket CCTV 2–16 Kamera Terpasang | ${SITE.name}`,
     description:
       "Paket CCTV 2 hingga 16 kamera. Harga sudah termasuk pemasangan, kabel, dan setting ke HP.",
-    images: [`${SITE.url}/og/paket.svg`],
+    images: [`${SITE.url}/og/paket.png`],
   },
 };
 
