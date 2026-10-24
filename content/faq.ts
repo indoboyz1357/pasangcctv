@@ -26,12 +26,17 @@ export const HOME_FAQ: FaqItem[] = [
   {
     question: "Kamera apa yang digunakan?",
     answer:
-      "Paket utama menggunakan kamera Loewix 2MP ColorVu — gambar tetap berwarna di malam hari tanpa lampu inframerah. Tersedia juga kamera HiLook dan Hikvision dalam resolusi 2MP dan 5MP sesuai kebutuhan dan anggaran.",
+      "Paket utama menggunakan kamera Loewix 2MP ColorVu yang menghasilkan rekaman tetap berwarna 24 jam (siang dan malam, dengan bukaan lensa besar dan warm light, bukan inframerah hitam-putih standar). Tersedia juga kamera HiLook dan Hikvision dalam resolusi 2MP dan 5MP sesuai kebutuhan dan anggaran.",
   },
   {
-    question: "Apakah melayani area di luar Jakarta?",
+    question: "Area mana saja yang dilayani?",
     answer:
-      "Ya. Kami melayani JABODETABEK — Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Hubungi kami via WhatsApp untuk memastikan jadwal survei di lokasi Anda.",
+      "Kami melayani seluruh wilayah Jabodetabek — Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Teknisi kami berbasis di Ciledug, Kota Tangerang, dan siap datang untuk survei lokasi.",
+  },
+  {
+    question: "Apakah ada biaya tambahan di luar paket?",
+    answer:
+      "Tidak ada biaya tersembunyi. Setiap paket sudah mencakup kabel (40m untuk 2 kamera, 80m untuk 4 kamera, 160m untuk 8 kamera, 320m untuk 16 kamera). Jika denah lokasi membutuhkan tarikan kabel lebih panjang dari jatah paket, kelebihan kabel dihitung transparan per meter dan disampaikan sebelum pemasangan.",
   },
   {
     question: "Berapa lama garansi kamera CCTV?",

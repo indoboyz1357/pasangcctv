@@ -1,8 +1,9 @@
 import { MetadataRoute } from "next";
+import { SITE } from "@/content/site";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://pasangcctv.id";
+const BASE_URL = SITE.url;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

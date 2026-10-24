@@ -15,9 +15,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: `Jasa Pasang CCTV di JABODETABEK | ${SITE.name}`,
+  title: `Jasa Pasang CCTV Jabodetabek Mulai Rp2,35 Juta | ${SITE.name}`,
   description:
-    "Jasa pasang CCTV di JABODETABEK mulai Rp2.350.000, sudah termasuk pemasangan dan setting ke HP. Tersedia Loewix, HiLook, dan Hikvision. Hubungi via WhatsApp.",
+    "Jasa pasang CCTV Jabodetabek mulai Rp2.350.000, sudah termasuk pemasangan, kabel, dan setting ke HP. Tersedia Loewix, HiLook, dan Hikvision. Gratis survei dan bergaransi.",
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",

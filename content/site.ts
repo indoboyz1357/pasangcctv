@@ -3,8 +3,8 @@
 
 export const SITE = {
   name: "PasangCCTV",
-  domain: "pasangcctv.id",
-  url: "https://pasangcctv.id",
+  domain: "pasangcctv.my.id",
+  url: "https://pasangcctv.my.id",
   defaultTitle: "PasangCCTV",
   locale: "id_ID",
   lang: "id",
@@ -35,7 +35,7 @@ export const LOCATION = {
     "https://www.google.com/maps/search/?api=1&query=Mulya+IV+RT+001%2FRW018+No.+43A+Paninggilan+Ciledug+Kota+Tangerang+Banten+15153",
 } as const;
 
-export const SERVICE_AREA = "JABODETABEK";
+export const SERVICE_AREA = "Jabodetabek";
 
 export const BRANDS = ["Loewix", "HiLook", "Hikvision"] as const;
 

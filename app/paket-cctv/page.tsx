@@ -7,9 +7,9 @@ import { LOEWIX_PACKAGES, OTHER_SERIES, PAYMENT_NOTES } from "@/content/packages
 import { PACKAGE_FAQ } from "@/content/faq";
 
 export const metadata: Metadata = {
-  title: `Paket CCTV Lengkap Harga Terpasang | ${SITE.name}`,
+  title: `Harga Paket CCTV 2–16 Kamera Terpasang | ${SITE.name}`,
   description:
-    "Lihat paket CCTV lengkap dari 2 hingga 16 kamera. Harga sudah termasuk pemasangan, DVR, hard disk, dan kabel. Pilih Loewix, HiLook, atau Hikvision.",
+    "Lihat daftar harga paket CCTV 2 hingga 16 kamera terpasang lengkap. Termasuk kamera Loewix, HiLook, Hikvision, DVR, hard disk, kabel, dan garansi resmi.",
   alternates: {
     canonical: `${SITE.url}/paket-cctv/`,
   },
@@ -17,24 +17,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: SITE.locale,
     siteName: SITE.name,
-    title: `Paket CCTV Lengkap Harga Terpasang | ${SITE.name}`,
+    title: `Harga Paket CCTV 2–16 Kamera Terpasang | ${SITE.name}`,
     description:
-      "Lihat paket CCTV lengkap dari 2 hingga 16 kamera. Harga sudah termasuk pemasangan, DVR, hard disk, dan kabel.",
+      "Daftar harga paket CCTV 2 hingga 16 kamera terpasang lengkap. Termasuk kamera, DVR, hard disk, kabel, pasang, dan setting HP.",
     url: `${SITE.url}/paket-cctv/`,
     images: [
       {
         url: `${SITE.url}/og/paket.svg`,
         width: 1200,
         height: 630,
-        alt: "PasangCCTV - Paket CCTV Lengkap",
+        alt: "PasangCCTV - Harga Paket CCTV Terpasang",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `Paket CCTV Lengkap Harga Terpasang | ${SITE.name}`,
+    title: `Harga Paket CCTV 2–16 Kamera Terpasang | ${SITE.name}`,
     description:
-      "Paket CCTV 2 hingga 16 kamera. Harga sudah termasuk pemasangan dan setting ke HP.",
+      "Paket CCTV 2 hingga 16 kamera. Harga sudah termasuk pemasangan, kabel, dan setting ke HP.",
     images: [`${SITE.url}/og/paket.svg`],
   },
 };
@@ -130,7 +130,7 @@ export default function PaketCCTV() {
             <Link href="/" className="text-accent hover:underline">
               layanan pasang CCTV
             </Link>{" "}
-            kami melayani JABODETABEK.
+            kami melayani seluruh wilayah Jabodetabek.
           </p>
         </div>
       </section>
@@ -142,10 +142,8 @@ export default function PaketCCTV() {
             <h2 className="text-2xl font-extrabold text-white mb-2">
               Paket Loewix 2MP ColorVu + Audio
             </h2>
-            <p className="text-text-secondary text-sm mb-2">
-              Kamera ColorVu menghasilkan gambar berwarna di malam hari. Rekam
-              suara 1 arah. Bisa dipantau dari HP. Pilih kamera indoor atau
-              outdoor bebas dalam satu paket.
+            <p className="text-text-secondary text-sm mb-2 max-w-3xl leading-relaxed">
+              Teknologi ColorVu memanfaatkan sensor sensitivitas tinggi dan warm lighting agar rekaman tetap berwarna terang 24 jam penuh (bukan inframerah hitam-putih). Kamera dilengkapi mikrofon terpasang untuk merekam suara 1 arah, serta bisa dipantau langsung dari HP secara online. Kombinasi kamera indoor/outdoor bebas ditentukan sesuai kebutuhan lokasi.
             </p>
             <ul className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-text-secondary mb-6">
               <li className="flex items-center gap-2"><IconCheck />Harga termasuk pemasangan</li>
@@ -218,11 +216,19 @@ export default function PaketCCTV() {
             <h2 className="text-2xl font-extrabold text-white mb-2">
               Paket CCTV HiLook dan Hikvision
             </h2>
-            <p className="text-text-secondary text-sm mb-8">
-              Tersedia paket 2, 4, 8, dan 16 kamera. Harga sudah termasuk
-              pemasangan. Garansi HiLook {WARRANTY.hilook}, Hikvision{" "}
-              {WARRANTY.hikvision}.
+            <p className="text-text-secondary text-sm mb-4 max-w-3xl leading-relaxed">
+              Tersedia paket 2, 4, 8, dan 16 kamera. Semua paket sudah lengkap termasuk unit kamera (indoor/outdoor bebas pilih), DVR dedicated, hard disk rekaman, kabel coaxial + power, power supply, konektor, jasa pemasangan rapi, serta setting pemantauan via aplikasi smartphone.
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-xs text-text-secondary">
+              <div className="bg-bg/60 p-3 rounded-lg border border-border">
+                <span className="font-bold text-white block mb-1">Pilihan Resolusi 2MP (Full HD 1080p):</span>
+                Sangat ideal dan efisien untuk rumah tinggal, toko, atau kantor skala menengah. Wajah dan pergerakan objek terlihat jelas dengan penggunaan memori hard disk yang hemat.
+              </div>
+              <div className="bg-bg/60 p-3 rounded-lg border border-border">
+                <span className="font-bold text-white block mb-1">Pilihan Resolusi 5MP (Ultra HD):</span>
+                Resolusi 2,5 kali lebih detail dibanding 2MP. Cocok untuk area luas, lorong gudang, lobi perkantoran, atau kebutuhan membaca nomor plat kendaraan secara lebih presisi.
+              </div>
+            </div>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -261,6 +267,10 @@ export default function PaketCCTV() {
               </ScrollReveal>
             ))}
           </div>
+
+          <ScrollReveal className="mt-8 text-xs text-text-secondary text-center max-w-2xl mx-auto">
+            *Semua paket mencakup jatah kabel standar (40m untuk 2 kamera, 80m untuk 4 kamera, 160m untuk 8 kamera, 320m untuk 16 kamera). Apabila denah gedung atau jalur instalasi memerlukan kabel lebih panjang, kelebihan kabel dihitung transparan per meter dan disepakati saat survei lokasi tanpa biaya tersembunyi.
+          </ScrollReveal>
         </div>
       </section>
 

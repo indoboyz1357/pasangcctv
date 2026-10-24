@@ -16,7 +16,7 @@ Satu keyword utama hanya untuk satu halaman. Beranda tidak mengejar "paket cctv"
 - Satu H1 per halaman, memuat keyword utama halaman itu.
 - Title tag maksimal 60 karakter, keyword di bagian awal, format: "[Judul] | PasangCCTV".
 - Meta description 140 sampai 155 karakter, memuat keyword utama dan satu ajakan bertindak yang konkret.
-- Canonical lewat metadata.alternates.canonical, memakai URL lengkap dengan domain pasangcctv.id dan garis miring di akhir.
+- Canonical lewat metadata.alternates.canonical, memakai URL lengkap dengan domain pasangcctv.my.id dan garis miring di akhir.
 - Atribut lang="id" pada elemen html. Open Graph dengan og:locale id_ID.
 - Open Graph dan Twitter Card lengkap. Gambar OG 1200x630 di /public/og/.
 - Viewport mobile di app/layout.tsx.

@@ -8,9 +8,9 @@ import { LOEWIX_PREVIEW, OTHER_SERIES } from "@/content/packages";
 import { HOME_FAQ } from "@/content/faq";
 
 export const metadata: Metadata = {
-  title: `Jasa Pasang CCTV di JABODETABEK | ${SITE.name}`,
+  title: "Jasa Pasang CCTV Jabodetabek Mulai Rp2,35 Juta | Gratis Survei",
   description:
-    "Jasa pasang CCTV di JABODETABEK mulai Rp2.350.000, sudah termasuk pemasangan dan setting ke HP. Tersedia Loewix, HiLook, dan Hikvision. Tanya via WhatsApp.",
+    "Jasa pasang CCTV Jabodetabek untuk rumah, ruko, kantor, dan gudang. Paket 2–16 kamera Loewix, HiLook, Hikvision mulai Rp2,35 juta. Gratis survei dan bergaransi resmi.",
   alternates: {
     canonical: `${SITE.url}/`,
   },
@@ -18,24 +18,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: SITE.locale,
     siteName: SITE.name,
-    title: `Jasa Pasang CCTV di JABODETABEK | ${SITE.name}`,
+    title: "Jasa Pasang CCTV Jabodetabek Mulai Rp2,35 Juta | Gratis Survei",
     description:
-      "Jasa pasang CCTV di JABODETABEK mulai Rp2.350.000, sudah termasuk pemasangan dan setting ke HP. Tersedia Loewix, HiLook, dan Hikvision.",
+      "Jasa pasang CCTV Jabodetabek untuk rumah, ruko, kantor, dan gudang. Paket 2–16 kamera Loewix, HiLook, Hikvision mulai Rp2,35 juta. Gratis survei dan bergaransi resmi.",
     url: `${SITE.url}/`,
     images: [
       {
         url: `${SITE.url}/og/home.svg`,
         width: 1200,
         height: 630,
-        alt: "PasangCCTV - Jasa Pasang CCTV JABODETABEK",
+        alt: "PasangCCTV - Jasa Pasang CCTV Jabodetabek",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `Jasa Pasang CCTV di JABODETABEK | ${SITE.name}`,
+    title: "Jasa Pasang CCTV Jabodetabek Mulai Rp2,35 Juta | Gratis Survei",
     description:
-      "Jasa pasang CCTV di JABODETABEK mulai Rp2.350.000. Harga sudah termasuk pemasangan dan setting ke HP.",
+      "Jasa pasang CCTV Jabodetabek untuk rumah, ruko, kantor, dan gudang. Paket mulai Rp2,35 juta terpasang lengkap dengan garansi resmi.",
     images: [`${SITE.url}/og/home.svg`],
   },
 };
@@ -266,12 +266,12 @@ export default function Home() {
 
         <div className="container-max section-padding relative w-full">
           <div className="max-w-3xl">
-            <div className="label-tag">JABODETABEK</div>
+            <div className="label-tag">Jabodetabek</div>
             <h1
               id="hero-heading"
               className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white"
             >
-              Pasang CCTV
+              Jasa Pasang CCTV Jabodetabek
               <br />
               <span className="text-accent">untuk Rumah, Ruko,</span>
               <br />
@@ -327,7 +327,7 @@ export default function Home() {
                 Jasa pemasangan CCTV dari survei sampai serah terima
               </h2>
               <p className="mt-4 text-text-secondary leading-relaxed">
-                Kami mengerjakan pemasangan CCTV di JABODETABEK untuk rumah
+                Kami mengerjakan pemasangan CCTV di Jabodetabek untuk rumah
                 tinggal, ruko, kantor, dan gudang. Teknisi datang ke lokasi Anda,
                 memasang kamera di titik yang disepakati, menarik kabel, dan
                 mengonfigurasi DVR hingga pemantauan dari HP aktif.
@@ -433,12 +433,17 @@ export default function Home() {
 
           {/* Loewix */}
           <ScrollReveal delay={60} className="mt-10">
-            <h3 className="text-lg font-bold text-white mb-4">
-              Loewix 2MP ColorVu + Audio
-              <span className="ml-3 text-xs font-normal text-text-secondary bg-surface border border-border rounded-full px-3 py-1">
+            <div className="flex flex-wrap items-center gap-3 mb-2">
+              <h3 className="text-xl font-bold text-white">
+                Loewix 2MP ColorVu + Audio
+              </h3>
+              <span className="text-xs font-medium text-text-secondary bg-surface border border-border rounded-full px-3 py-1">
                 Garansi 1 tahun
               </span>
-            </h3>
+            </div>
+            <p className="text-sm text-text-secondary mb-6 max-w-2xl">
+              Teknologi ColorVu menghasilkan rekaman tetap berwarna terang 24 jam dengan warm light (bukan hitam-putih). Dilengkapi mikrofon bawaan untuk rekam suara satu arah.
+            </p>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {LOEWIX_PREVIEW.map((pkg, i) => (
@@ -462,15 +467,29 @@ export default function Home() {
             ))}
           </div>
 
-          {/* HiLook & Hikvision — grid 2 kolom setiap seri */}
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* HiLook & Hikvision */}
+          <ScrollReveal delay={70} className="mt-12">
+            <div className="flex flex-wrap items-center gap-3 mb-2">
+              <h3 className="text-xl font-bold text-white">
+                Paket CCTV HiLook &amp; Hikvision
+              </h3>
+              <span className="text-xs font-medium text-text-secondary bg-surface border border-border rounded-full px-3 py-1">
+                Garansi resmi 2 tahun
+              </span>
+            </div>
+            <p className="text-sm text-text-secondary mb-6 max-w-2xl">
+              Pilihan resolusi 2MP (Full HD tajam untuk rumah/ruko) dan 5MP (Ultra HD untuk baca detail plat nomor &amp; area luas). Sudah lengkap kamera indoor/outdoor, DVR, hard disk, kabel, pasang, dan setting HP.
+            </p>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {OTHER_SERIES.map((series, si) => (
               <ScrollReveal key={`${series.name}-${series.resolution}`} delay={si * 70}>
                 <div className="card h-full">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="font-bold text-white">
+                    <h4 className="font-bold text-white">
                       {series.name} {series.resolution}
-                    </h3>
+                    </h4>
                     <span className="text-xs text-text-secondary bg-bg border border-border rounded-full px-3 py-1">
                       Garansi {series.warranty}
                     </span>
@@ -482,7 +501,7 @@ export default function Home() {
                         className="flex items-center justify-between py-2 border-b border-border/60 last:border-0"
                       >
                         <span className="text-sm text-text-secondary">
-                          {pkg.cameras} kamera
+                          {pkg.cameras} kamera (DVR + HDD + Kabel + Pasang)
                         </span>
                         <span className="font-bold text-white text-sm whitespace-nowrap">
                           {pkg.priceFormatted}
@@ -494,6 +513,10 @@ export default function Home() {
               </ScrollReveal>
             ))}
           </div>
+
+          <ScrollReveal className="mt-6 text-xs text-text-secondary text-center max-w-2xl mx-auto">
+            *Semua harga sudah termasuk unit kamera, DVR, hard disk, kabel, jasa pemasangan, dan setting online ke HP. Kelebihan panjang kabel dari jatah standar dihitung transparan per meter saat survei lokasi.
+          </ScrollReveal>
 
           <ScrollReveal className="mt-8 text-center">
             <Link href="/paket-cctv/" id="packages-cta-link" className="btn-outline">
@@ -551,22 +574,22 @@ export default function Home() {
               <div className="label-tag">Minta penawaran</div>
               <h2 className="section-title">Ceritakan kebutuhan Anda</h2>
               <p className="section-subtitle mt-3">
-                Isi form di samping. Tombol kirim akan membuka WhatsApp dengan
+                Isi form berikut. Tombol kirim akan membuka WhatsApp dengan
                 pesan yang sudah terisi. Kami akan membalas untuk menjadwalkan
-                survei.
+                survei gratis.
               </p>
               <div className="mt-8 space-y-3 text-sm text-text-secondary">
                 <p className="flex items-center gap-3">
                   <IconCheck />
-                  Tidak ada biaya survei
+                  Gratis survei lokasi tanpa biaya
                 </p>
                 <p className="flex items-center gap-3">
                   <IconCheck />
-                  Estimasi harga diberikan setelah melihat lokasi
+                  Harga final transparan disepakati saat survei tanpa biaya siluman
                 </p>
                 <p className="flex items-center gap-3">
                   <IconCheck />
-                  Melayani JABODETABEK
+                  Melayani seluruh wilayah Jabodetabek
                 </p>
               </div>
             </ScrollReveal>

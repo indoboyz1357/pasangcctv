@@ -40,7 +40,7 @@ function makeSvg(headline, keyword) {
   <text x="100" y="374" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0A0A0A">${keyword}</text>
 
   <!-- Domain -->
-  <text x="80" y="540" font-family="Arial, sans-serif" font-size="22" fill="#A1A1AA">pasangcctv.id</text>
+  <text x="80" y="540" font-family="Arial, sans-serif" font-size="22" fill="#A1A1AA">pasangcctv.my.id</text>
 
   <!-- Decorative circles -->
   <circle cx="1050" cy="200" r="180" fill="#F5C518" fill-opacity="0.04"/>
