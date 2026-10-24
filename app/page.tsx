@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { QuoteForm } from "@/components/QuoteForm";
 import { SITE, CONTACT, LOCATION } from "@/content/site";
-import { LOEWIX_PREVIEW } from "@/content/packages";
+import { LOEWIX_PREVIEW, OTHER_SERIES } from "@/content/packages";
 import { HOME_FAQ } from "@/content/faq";
 
 export const metadata: Metadata = {
@@ -424,14 +424,23 @@ export default function Home() {
         <div className="container-max">
           <ScrollReveal>
             <div className="label-tag">Paket tersedia</div>
-            <h2 className="section-title">Cuplikan paket CCTV Loewix</h2>
+            <h2 className="section-title">Cuplikan paket CCTV</h2>
             <p className="section-subtitle">
-              Harga sudah termasuk kamera, DVR, hard disk, kabel, pemasangan, dan
-              setting ke HP.
+              Loewix, HiLook, dan Hikvision — harga sudah termasuk kamera, DVR,
+              hard disk, kabel, pemasangan, dan setting ke HP.
             </p>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+          {/* Loewix */}
+          <ScrollReveal delay={60} className="mt-10">
+            <h3 className="text-lg font-bold text-white mb-4">
+              Loewix 2MP ColorVu + Audio
+              <span className="ml-3 text-xs font-normal text-text-secondary bg-surface border border-border rounded-full px-3 py-1">
+                Garansi 1 tahun
+              </span>
+            </h3>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {LOEWIX_PREVIEW.map((pkg, i) => (
               <ScrollReveal key={pkg.cameras} delay={i * 80}>
                 <div className="card flex flex-col h-full hover:border-accent/50 hover:-translate-y-1 transition-all duration-200">
@@ -453,9 +462,42 @@ export default function Home() {
             ))}
           </div>
 
+          {/* HiLook & Hikvision — grid 2 kolom setiap seri */}
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {OTHER_SERIES.map((series, si) => (
+              <ScrollReveal key={`${series.name}-${series.resolution}`} delay={si * 70}>
+                <div className="card h-full">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-bold text-white">
+                      {series.name} {series.resolution}
+                    </h3>
+                    <span className="text-xs text-text-secondary bg-bg border border-border rounded-full px-3 py-1">
+                      Garansi {series.warranty}
+                    </span>
+                  </div>
+                  <div className="space-y-2">
+                    {series.packages.map((pkg) => (
+                      <div
+                        key={pkg.cameras}
+                        className="flex items-center justify-between py-2 border-b border-border/60 last:border-0"
+                      >
+                        <span className="text-sm text-text-secondary">
+                          {pkg.cameras} kamera
+                        </span>
+                        <span className="font-bold text-white text-sm whitespace-nowrap">
+                          {pkg.priceFormatted}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
           <ScrollReveal className="mt-8 text-center">
             <Link href="/paket-cctv/" id="packages-cta-link" className="btn-outline">
-              Lihat harga paket CCTV 4 kamera dan lainnya
+              Lihat tabel lengkap semua paket
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
