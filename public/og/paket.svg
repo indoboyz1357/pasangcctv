@@ -23,7 +23,7 @@
 
   <!-- Keyword pill -->
   <rect x="80" y="340" width="364" height="50" rx="8" fill="#F5C518"/>
-  <text x="100" y="374" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0A0A0A">2 hingga 16 kamera</text>
+  <text x="100" y="374" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0A0A0A">2 sampai 16 kamera</text>
 
   <!-- Domain -->
   <text x="80" y="540" font-family="Arial, sans-serif" font-size="22" fill="#A1A1AA">pasangcctv.my.id</text>

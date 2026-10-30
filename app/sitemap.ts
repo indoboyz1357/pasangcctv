@@ -1,23 +1,14 @@
 import { MetadataRoute } from "next";
 import { SITE } from "@/content/site";
+import { PAGES } from "@/content/seo";
 
 export const dynamic = "force-static";
 
-const BASE_URL = SITE.url;
-
+// Tanggal ubah diambil dari content/seo.ts dan hanya berubah saat isi halaman berubah.
+// Google mengabaikan changeFrequency dan priority, jadi tidak ditulis.
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: `${BASE_URL}/`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: `${BASE_URL}/paket-cctv/`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-  ];
+  return Object.values(PAGES).map((page) => ({
+    url: `${SITE.url}${page.path}`,
+    lastModified: page.lastModified,
+  }));
 }

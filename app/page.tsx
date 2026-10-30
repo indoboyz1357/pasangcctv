@@ -1,97 +1,83 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { QuoteForm } from "@/components/QuoteForm";
+import { JsonLd } from "@/components/JsonLd";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { PackageSeriesCard } from "@/components/PackageSeriesCard";
 import { SITE, CONTACT, LOCATION } from "@/content/site";
-import { LOEWIX_PREVIEW, OTHER_SERIES } from "@/content/packages";
+import {
+  PREVIEW_SERIES,
+  MIN_PRICE_FORMATTED,
+  MAX_PRICE_FORMATTED,
+} from "@/content/packages";
 import { HOME_FAQ } from "@/content/faq";
+import { PAGES, buildMetadata } from "@/content/seo";
 
-export const metadata: Metadata = {
-  title: "Jasa Pasang CCTV Jabodetabek Mulai Rp2.350.000 | PasangCCTV",
-  description:
-    "Jasa pasang CCTV Jabodetabek untuk rumah, ruko, kantor, dan gudang. Paket 2 sampai 16 kamera mulai Rp2.350.000, sudah termasuk pasang. Tanya via WhatsApp.",
-  alternates: {
-    canonical: `${SITE.url}/`,
-  },
-  openGraph: {
-    type: "website",
-    locale: SITE.locale,
-    siteName: SITE.name,
-    title: "Jasa Pasang CCTV Jabodetabek Mulai Rp2.350.000 | PasangCCTV",
-    description:
-      "Jasa pasang CCTV Jabodetabek untuk rumah, ruko, kantor, dan gudang. Paket 2 sampai 16 kamera mulai Rp2.350.000, sudah termasuk pasang. Tanya via WhatsApp.",
-    url: `${SITE.url}/`,
-    images: [
-      {
-        url: `${SITE.url}/og/home.png`,
-        width: 1200,
-        height: 630,
-        alt: "PasangCCTV - Jasa Pasang CCTV Jabodetabek",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Jasa Pasang CCTV Jabodetabek Mulai Rp2.350.000 | PasangCCTV",
-    description:
-      "Jasa pasang CCTV Jabodetabek mulai Rp2.350.000, sudah termasuk pasang dan setting ke HP. Tanya via WhatsApp.",
-    images: [`${SITE.url}/og/home.png`],
-  },
-};
+export const metadata = buildMetadata(PAGES.home);
 
-// Schema JSON-LD beranda
+// Cuplikan beranda memakai tabel dua kolom (kamera dan harga).
+// Spesifikasi Loewix lengkap ada di halaman paket.
+const previewSeries = PREVIEW_SERIES.map((s) => ({ ...s, hasSpecs: false }));
+
+// Schema JSON-LD beranda. Satu entitas LocalBusiness (tanpa Organization terpisah)
+// agar nama dan data NAP konsisten.
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${SITE.url}/#organization`,
-      name: "PasangCCTV",
-      url: SITE.url,
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: CONTACT.whatsapp,
-        contactType: "customer service",
-        availableLanguage: "Indonesian",
-      },
-    },
-    {
-      "@type": "WebSite",
-      "@id": `${SITE.url}/#website`,
-      url: SITE.url,
-      name: "PasangCCTV",
-      publisher: { "@id": `${SITE.url}/#organization` },
-    },
     {
       "@type": "LocalBusiness",
       "@id": `${SITE.url}/#localbusiness`,
       name: LOCATION.name,
       url: SITE.url,
+      image: `${SITE.url}/og/home.png`,
+      logo: `${SITE.url}/logo.png`,
       telephone: CONTACT.phoneE164,
+      priceRange: `${MIN_PRICE_FORMATTED} - ${MAX_PRICE_FORMATTED}`,
       address: {
         "@type": "PostalAddress",
         streetAddress: `${LOCATION.street}, ${LOCATION.area}`,
         addressLocality: LOCATION.city,
         addressRegion: LOCATION.province,
         postalCode: LOCATION.postalCode,
-        addressCountry: "ID",
+        addressCountry: LOCATION.country,
       },
       geo: {
         "@type": "GeoCoordinates",
         latitude: LOCATION.coordinates.lat,
         longitude: LOCATION.coordinates.lng,
       },
-      openingHours: "Mo-Su 00:00-23:59",
-      areaServed: [
-        "Jakarta",
-        "Bogor",
-        "Depok",
-        "Tangerang",
-        "Bekasi",
-      ],
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: CONTACT.phoneE164,
+        contactType: "customer service",
+        availableLanguage: "Indonesian",
+      },
+      areaServed: ["Jakarta", "Bogor", "Depok", "Tangerang", "Bekasi"],
       hasMap: LOCATION.googleMapsUrl,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE.url}/#website`,
+      url: SITE.url,
+      name: SITE.name,
+      inLanguage: SITE.lang,
+      publisher: { "@id": `${SITE.url}/#localbusiness` },
     },
     {
       "@type": "FAQPage",
@@ -103,17 +89,6 @@ const jsonLd = {
           text: item.answer,
         },
       })),
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Beranda",
-          item: `${SITE.url}/`,
-        },
-      ],
     },
   ],
 };
@@ -203,12 +178,12 @@ function IconMapPin() {
 
 const REASONS = [
   {
-    title: "Harga sudah termasuk semua",
-    desc: "Pemasangan, power supply, konektor, dan setting pemantauan dari HP sudah masuk dalam harga paket.",
+    title: "Harga sudah termasuk pemasangan",
+    desc: "Semua harga paket sudah termasuk kamera, DVR, hard disk, kabel, pemasangan, dan setting ke HP. Paket Loewix juga sudah termasuk power supply dan konektor.",
   },
   {
     title: "Pilih kamera indoor atau outdoor",
-    desc: "Dalam satu paket, Anda bebas menentukan berapa kamera yang dipasang di dalam dan berapa yang di luar. Kombinasi disesuaikan saat survei.",
+    desc: "Pada paket Loewix, Anda bebas menentukan berapa kamera yang dipasang di dalam dan berapa yang di luar.",
   },
   {
     title: "Kantor fisik di Ciledug, buka 24 jam",
@@ -225,18 +200,15 @@ const SERVICES = [
 
 const HOW_IT_WORKS = [
   { step: "01", icon: <IconPhone />, title: "Hubungi dan ceritakan kebutuhan", desc: "Kirim pesan WhatsApp. Ceritakan jenis tempat, ukuran, dan jumlah titik yang ingin dipantau." },
-  { step: "02", icon: <IconSurvey />, title: "Survei lokasi", desc: "Teknisi datang untuk memeriksa denah, jalur kabel, dan titik terbaik untuk memasang kamera." },
+  { step: "02", icon: <IconSurvey />, title: "Survei lokasi gratis", desc: "Teknisi datang tanpa biaya untuk memeriksa denah, jalur kabel, dan titik terbaik untuk memasang kamera." },
   { step: "03", icon: <IconWrench />, title: "Pemasangan kamera dan DVR", desc: "Teknisi memasang kamera, menarik kabel dengan rapi, mengonfigurasi DVR, dan menguji rekaman." },
-  { step: "04", icon: <IconHandshake />, title: "Setting ke HP dan serah terima", desc: "Teknisi mengaktifkan pemantauan dari HP dan mengajarkan cara pakainya. Pekerjaan selesai setelah Anda mencobanya sendiri." },
+  { step: "04", icon: <IconHandshake />, title: "Setting ke HP dan serah terima", desc: "Teknisi mengaktifkan pemantauan dari HP dan mengajarkan cara melihat playback atau rekaman." },
 ];
 
 export default function Home() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
 
       {/* ── Hero ── */}
       <section
@@ -275,24 +247,18 @@ export default function Home() {
                 dan Kantor
               </h1>
               <p className="mt-6 text-text-secondary text-lg sm:text-xl max-w-xl leading-relaxed">
-                Pasang CCTV di Jabodetabek mulai
-                Rp2.350.000 untuk 2 kamera, sudah termasuk pemasangan dan setting ke HP.
+                Pasang CCTV di Jabodetabek mulai {MIN_PRICE_FORMATTED} untuk 2
+                kamera, sudah termasuk pemasangan dan setting ke HP.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 mt-8">
-                <a
-                  href={`${CONTACT.whatsappUrl}?text=Halo%2C%20saya%20ingin%20tanya%20soal%20pasang%20CCTV.`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsAppButton
+                  message="Halo, saya ingin tanya soal pasang CCTV."
                   id="hero-whatsapp-btn"
                   className="btn-primary"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden="true">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.535 5.856L.057 23.492a.75.75 0 0 0 .93.93l5.7-1.493A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.75 9.75 0 0 1-4.964-1.356l-.356-.212-3.685.966.983-3.596-.232-.371A9.75 9.75 0 1 1 12 21.75z" />
-                  </svg>
                   Tanya via WhatsApp
-                </a>
+                </WhatsAppButton>
                 <Link
                   href="/paket-cctv/"
                   id="hero-packages-btn"
@@ -315,16 +281,16 @@ export default function Home() {
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl bg-surface group">
                 <Image
-                  src="https://res.cloudinary.com/w8egcbkm/image/upload/w_800,q_auto/v1792847122/cctvgo_2.webp"
-                  alt="Unit kamera CCTV HiLook dan perangkat DVR dalam kemasan siap pasang"
+                  src="/images/kotak-kamera-hilook-turbo-hd.webp"
+                  alt="Tumpukan kotak kamera CCTV HiLook Turbo HD indoor dan outdoor"
                   width={800}
                   height={600}
+                  sizes="(min-width: 1024px) 40vw, 100vw"
                   priority
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="p-3 bg-surface/90 border-t border-border flex items-center justify-between text-xs text-text-secondary">
-                  <span>Kamera dan DVR</span>
-                  <span className="text-accent font-semibold">Siap pasang</span>
+                <div className="p-3 bg-surface/90 border-t border-border text-xs text-text-secondary">
+                  Kamera HiLook Turbo HD
                 </div>
               </div>
             </div>
@@ -348,8 +314,7 @@ export default function Home() {
                 mengonfigurasi DVR (alat perekam CCTV) hingga pemantauan dari HP aktif.
               </p>
               <p className="mt-3 text-text-secondary leading-relaxed">
-                Harga <Link href="/paket-cctv/" className="text-accent hover:underline">paket CCTV 4 kamera</Link> dan paket lain sudah termasuk biaya jasa pasang CCTV,
-                perangkat keras, dan setting awal.
+                Harga <Link href="/paket-cctv/" className="text-accent hover:underline">paket CCTV 4 kamera</Link> dan paket lain sudah termasuk biaya jasa pasang CCTV.
                 Kamera yang tersedia: Loewix 2MP ColorVu (gambar tetap berwarna di malam hari), HiLook, dan Hikvision.
               </p>
             </div>
@@ -362,7 +327,7 @@ export default function Home() {
         <div className="container-max">
           <ScrollReveal>
             <div className="label-tag">Mengapa kami</div>
-            <h2 className="section-title">Yang membedakan kami</h2>
+            <h2 className="section-title">Yang Anda dapat dari paket kami</h2>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {REASONS.map((r, i) => (
@@ -441,96 +406,30 @@ export default function Home() {
             <div className="label-tag">Paket tersedia</div>
             <h2 className="section-title">Cuplikan paket CCTV</h2>
             <p className="section-subtitle">
-              Loewix, HiLook, dan Hikvision. Harga sudah termasuk kamera, DVR,
-              hard disk, kabel, pemasangan, dan setting ke HP.
+              Paket 2, 4, 8, dan 16 kamera dari Loewix, HiLook, dan Hikvision.
+              Semua harga sudah termasuk kamera, DVR, hard disk, kabel,
+              pemasangan, dan setting ke HP.
             </p>
           </ScrollReveal>
 
-          {/* Loewix */}
-          <ScrollReveal delay={60} className="mt-10">
-            <div className="flex flex-wrap items-center gap-3 mb-2">
-              <h3 className="text-xl font-bold text-white">
-                Loewix 2MP ColorVu + Audio
-              </h3>
-              <span className="text-xs font-medium text-text-secondary bg-surface border border-border rounded-full px-3 py-1">
-                Garansi 1 tahun
-              </span>
-            </div>
-            <p className="text-sm text-text-secondary mb-6 max-w-2xl">
-              Teknologi ColorVu menghasilkan rekaman tetap berwarna terang 24 jam dengan warm light (bukan hitam-putih). Dilengkapi mikrofon bawaan untuk rekam suara satu arah.
-            </p>
-          </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {LOEWIX_PREVIEW.map((pkg, i) => (
-              <ScrollReveal key={pkg.cameras} delay={i * 80}>
-                <div className="card flex flex-col h-full hover:border-accent/50 hover:-translate-y-1 transition-all duration-200">
-                  <div className="text-accent font-extrabold text-4xl mb-1">
-                    {pkg.cameras}
-                  </div>
-                  <div className="text-text-secondary text-sm mb-4">kamera</div>
-                  <div className="text-2xl font-extrabold text-white mb-4">
-                    {pkg.priceFormatted}
-                  </div>
-                  <ul className="space-y-1.5 text-sm text-text-secondary flex-1">
-                    <li className="flex items-center gap-2"><IconCheck />{pkg.dvr} DVR</li>
-                    <li className="flex items-center gap-2"><IconCheck />Hard disk {pkg.hdd}</li>
-                    <li className="flex items-center gap-2"><IconCheck />Kabel {pkg.cable}</li>
-                    <li className="flex items-center gap-2"><IconCheck />Pasang + setting HP</li>
-                  </ul>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            {previewSeries.map((series, i) => (
+              <ScrollReveal key={series.id} delay={i * 80}>
+                <PackageSeriesCard
+                  series={series}
+                  description={
+                    series.id === "loewix-2mp"
+                      ? "Gambar tetap berwarna di malam hari, dengan rekam suara satu arah. Sudah termasuk power supply, konektor, dan setting ke HP."
+                      : undefined
+                  }
+                />
               </ScrollReveal>
             ))}
           </div>
 
-          {/* HiLook & Hikvision */}
-          <ScrollReveal delay={70} className="mt-12">
-            <div className="flex flex-wrap items-center gap-3 mb-2">
-              <h3 className="text-xl font-bold text-white">
-                Paket CCTV HiLook &amp; Hikvision
-              </h3>
-              <span className="text-xs font-medium text-text-secondary bg-surface border border-border rounded-full px-3 py-1">
-                Garansi 2 tahun
-              </span>
-            </div>
-            <p className="text-sm text-text-secondary mb-6 max-w-2xl">
-              Tersedia dua resolusi: 2MP untuk rumah dan ruko, 5MP untuk area yang lebih luas. Harga sudah termasuk kamera indoor atau outdoor, DVR, hard disk, kabel, pemasangan, dan setting ke HP.
-            </p>
-          </ScrollReveal>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {OTHER_SERIES.map((series, si) => (
-              <ScrollReveal key={`${series.name}-${series.resolution}`} delay={si * 70}>
-                <div className="card h-full">
-                  <div className="flex items-center justify-between mb-4">
-                    <h4 className="font-bold text-white">
-                      {series.name} {series.resolution}
-                    </h4>
-                    <span className="text-xs text-text-secondary bg-bg border border-border rounded-full px-3 py-1">
-                      Garansi {series.warranty}
-                    </span>
-                  </div>
-                  <div className="space-y-2">
-                    {series.packages.map((pkg) => (
-                      <div
-                        key={pkg.cameras}
-                        className="flex items-center justify-between py-2 border-b border-border/60 last:border-0"
-                      >
-                        <span className="text-sm text-text-secondary">
-                          {pkg.cameras} kamera (DVR + HDD + Kabel + Pasang)
-                        </span>
-                        <span className="font-bold text-white text-sm whitespace-nowrap">
-                          {pkg.priceFormatted}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-
-          <ScrollReveal className="mt-6 text-xs text-text-secondary text-center max-w-2xl mx-auto">
-            *Semua harga sudah termasuk unit kamera, DVR, hard disk, kabel, jasa pemasangan, dan setting online ke HP.
+          <ScrollReveal className="mt-6 text-sm text-text-secondary text-center max-w-2xl mx-auto">
+            Tersedia juga paket HiLook dan Hikvision 5MP, serta spesifikasi DVR,
+            hard disk, dan kabel paket Loewix, di halaman paket.
           </ScrollReveal>
 
           <ScrollReveal className="mt-8 text-center">
@@ -591,16 +490,16 @@ export default function Home() {
               <p className="section-subtitle mt-3">
                 Isi form berikut. Tombol kirim akan membuka WhatsApp dengan
                 pesan yang sudah terisi. Kami akan membalas untuk menjadwalkan
-                survei.
+                survei lokasi gratis.
               </p>
               <div className="mt-8 space-y-3 text-sm text-text-secondary">
                 <p className="flex items-center gap-3">
                   <IconCheck />
-                  Survei lokasi dijadwalkan lewat WhatsApp
+                  Survei lokasi gratis, dijadwalkan lewat WhatsApp
                 </p>
                 <p className="flex items-center gap-3">
                   <IconCheck />
-                  Harga final disepakati setelah survei lokasi
+                  Harga paket sudah termasuk pemasangan dan setting ke HP
                 </p>
                 <p className="flex items-center gap-3">
                   <IconCheck />

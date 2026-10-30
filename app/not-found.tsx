@@ -2,12 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/content/site";
 
+// Halaman 404 tidak diindeks dan tidak memakai canonical.
 export const metadata: Metadata = {
-  title: "Halaman Tidak Ditemukan",
+  title: `Halaman Tidak Ditemukan | ${SITE.name}`,
   description: "Halaman yang Anda cari tidak ada. Kembali ke beranda atau lihat paket CCTV kami.",
-  alternates: {
-    canonical: `${SITE.url}/404/`,
-  },
   robots: { index: false, follow: true },
 };
 

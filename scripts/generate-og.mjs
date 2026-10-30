@@ -1,11 +1,13 @@
-// Script untuk menghasilkan gambar OG (Open Graph) 1200x630 sebagai PNG
-// Dijalankan sekali: node scripts/generate-og.mjs
-// Output: public/og/home.png dan public/og/paket.png
-// Tidak membutuhkan foto — menggunakan teks dan grafis sederhana.
+// Membuat gambar OG (Open Graph) 1200x630 dalam format SVG dan PNG.
+// Jalankan: node scripts/generate-og.mjs
+// Output: public/og/home.(svg|png) dan public/og/paket.(svg|png)
+// PNG dibuat dengan sharp (sudah terpasang bersama Next.js).
+// Harga sengaja tidak ditulis di gambar agar tidak ketinggalan saat harga berubah.
 
 import { writeFileSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import sharp from "sharp";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const outDir = join(__dirname, "../public/og");
@@ -48,18 +50,14 @@ function makeSvg(headline, keyword) {
 </svg>`;
 }
 
-// Simpan sebagai SVG (PNG tidak bisa dibuat tanpa dependency eksternal)
-// Next.js menerima SVG untuk OG image jika tidak ada PNG.
-// Untuk PNG sungguhan, jalankan: npx svgexport public/og/home.svg public/og/home.png 1200:630
-
 const pages = [
-  { file: "home.svg", headline: "Pasang CCTV", keyword: "JABODETABEK mulai Rp2.350.000" },
-  { file: "paket.svg", headline: "Paket CCTV", keyword: "2 hingga 16 kamera" },
+  { name: "home", headline: "Pasang CCTV", keyword: "Jabodetabek: rumah, ruko, kantor" },
+  { name: "paket", headline: "Paket CCTV", keyword: "2 sampai 16 kamera" },
 ];
 
 for (const p of pages) {
   const svg = makeSvg(p.headline, p.keyword);
-  writeFileSync(join(outDir, p.file), svg, "utf8");
-  console.log(`✓ public/og/${p.file}`);
+  writeFileSync(join(outDir, `${p.name}.svg`), svg, "utf8");
+  await sharp(Buffer.from(svg)).png().toFile(join(outDir, `${p.name}.png`));
+  console.log(`OK public/og/${p.name}.svg dan ${p.name}.png`);
 }
-console.log("OG images ditulis sebagai SVG. Ganti referensi .png ke .svg atau convert ke PNG.");

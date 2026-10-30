@@ -17,8 +17,10 @@ export const CONTACT = {
   phoneE164: "+6281919037533",
 } as const;
 
+// Nama lokasi memakai nama brand yang sudah dikonfirmasi di stats.md.
+// Nama badan usaha atau nama kantor resmi belum dikonfirmasi pemilik.
 export const LOCATION = {
-  name: "PasangCCTV Tangerang",
+  name: "PasangCCTV",
   street: "Mulya IV RT 001/RW018 No. 43A",
   area: "Paninggilan, Kec. Ciledug",
   city: "Kota Tangerang",
@@ -52,3 +54,14 @@ export const WARRANTY = {
   hilook: "2 tahun",
   hikvision: "2 tahun",
 } as const;
+
+// Nama halaman untuk pesan WhatsApp otomatis (menyebut halaman asal).
+export const PAGE_LABELS: Record<string, string> = {
+  "/": "Beranda",
+  "/paket-cctv/": "Paket CCTV",
+};
+
+export function whatsappLink(message: string, pageLabel?: string): string {
+  const text = pageLabel ? `${message} (dari halaman ${pageLabel})` : message;
+  return `${CONTACT.whatsappUrl}?text=${encodeURIComponent(text)}`;
+}
