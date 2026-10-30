@@ -16,18 +16,20 @@ export function PackageSeriesCard({
   note,
   className = "",
 }: PackageSeriesCardProps) {
-  return (
-    <div className={`card h-full ${className}`}>
-      <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-        <h3 className="font-bold text-white text-lg">{series.title}</h3>
-        <span className="text-xs text-text-secondary bg-bg border border-border rounded-full px-3 py-1">
-          Garansi {series.warranty}
-        </span>
-      </div>
+  const text = description ?? series.description;
 
-      {description && (
+  return (
+    <div
+      className={`card h-full !border-accent/60 hover:!border-accent transition-colors ${className}`}
+    >
+      <h3 className="font-bold text-white text-lg">{series.title}</h3>
+      <span className="inline-block mt-2 mb-3 text-xs text-text-secondary bg-bg border border-border rounded-full px-3 py-1">
+        Garansi {series.warranty}
+      </span>
+
+      {text && (
         <p className="text-text-secondary text-sm leading-relaxed mb-4">
-          {description}
+          {text}
         </p>
       )}
 

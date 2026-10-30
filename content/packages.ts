@@ -22,6 +22,8 @@ export interface Series {
   resolution: string; // contoh: "2MP"
   title: string; // judul kartu
   warranty: string;
+  // Deskripsi singkat di bawah garansi. Hanya fakta dari stats.md.
+  description?: string;
   hasSpecs: boolean;
   packages: SeriesPackage[];
 }
@@ -75,6 +77,16 @@ function otherSeries(
   prices: [number, number, number, number]
 ): Series {
   const warranty = brand === "HiLook" ? WARRANTY.hilook : WARRANTY.hikvision;
+  const base =
+    "Sudah termasuk DVR, hard disk, kabel, pemasangan, dan setting ke HP.";
+  const intro =
+    brand === "HiLook"
+      ? resolution === "2MP"
+        ? "Kamera HiLook 2MP, merek di bawah Hikvision."
+        : "Kamera HiLook 5MP, sekitar 2,5 kali jumlah piksel dibanding 2MP."
+      : resolution === "2MP"
+        ? "Kamera Hikvision 2MP."
+        : "Kamera Hikvision 5MP, sekitar 2,5 kali jumlah piksel dibanding 2MP.";
   return {
     id: `${brand.toLowerCase()}-${resolution.toLowerCase()}`,
     brand,
@@ -82,6 +94,7 @@ function otherSeries(
     resolution,
     title: `${brand} ${resolution}`,
     warranty,
+    description: `${intro} ${base}`,
     hasSpecs: false,
     packages: [
       pkg(2, prices[0]),

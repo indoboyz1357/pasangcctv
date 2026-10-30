@@ -23,14 +23,16 @@ Isi brief ini dan minta persetujuan pemilik sebelum membuat halaman baru (Rule 2
 - Angka dan fakta yang dipakai (semua dari `stats.md`):
 - Klaim yang dipakai (cek `claims.md`, tidak ada yang dilarang):
 - Data yang masih dibutuhkan dari pemilik (tulis di `owner-data-needed.md`):
-- Cerita atau opini yang dipakai (dari `stories.md` atau `opinions.md`, kalau ada):
+- Cerita atau opini yang dipakai (dari `stories.md` atau `opinions.md`, maksimal satu cerita dan satu opini, kalau ada):
+- Byline (artikel): "Tim PasangCCTV", schema `author` bertipe Organization. Tanpa nama pribadi.
+- Nama klien: tidak ditulis. Pakai bentuk umum (hotel, instansi pemerintah, pabrik).
 
 ## 4. Link
 - Link internal masuk dan keluar beserta anchor (catat di `internal-links.md`):
 - Link eksternal (hanya artikel, sudah dibuka dan dicek):
 
 ## 5. Gambar
-- Gambar yang dipakai (dari `images.md`, status boleh):
+- Gambar yang dipakai (dari `images.md`, status boleh; tanpa foto orang dan tanpa foto klien):
 - Alt tiap gambar:
 
 ## 6. Schema

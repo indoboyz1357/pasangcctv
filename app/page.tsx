@@ -201,7 +201,7 @@ const SERVICES = [
 const HOW_IT_WORKS = [
   { step: "01", icon: <IconPhone />, title: "Hubungi dan ceritakan kebutuhan", desc: "Kirim pesan WhatsApp. Ceritakan jenis tempat, ukuran, dan jumlah titik yang ingin dipantau." },
   { step: "02", icon: <IconSurvey />, title: "Survei lokasi gratis", desc: "Teknisi datang tanpa biaya untuk memeriksa denah, jalur kabel, dan titik terbaik untuk memasang kamera." },
-  { step: "03", icon: <IconWrench />, title: "Pemasangan kamera dan DVR", desc: "Teknisi memasang kamera, menarik kabel dengan rapi, mengonfigurasi DVR, dan menguji rekaman." },
+  { step: "03", icon: <IconWrench />, title: "Pemasangan kamera dan DVR", desc: "Teknisi memasang kamera, menarik kabel, dan mengonfigurasi DVR." },
   { step: "04", icon: <IconHandshake />, title: "Setting ke HP dan serah terima", desc: "Teknisi mengaktifkan pemantauan dari HP dan mengajarkan cara melihat playback atau rekaman." },
 ];
 
@@ -317,6 +317,9 @@ export default function Home() {
                 Harga <Link href="/paket-cctv/" className="text-accent hover:underline">paket CCTV 4 kamera</Link> dan paket lain sudah termasuk biaya jasa pasang CCTV.
                 Kamera yang tersedia: Loewix 2MP ColorVu (gambar tetap berwarna di malam hari), HiLook, dan Hikvision.
               </p>
+              <p className="mt-3 text-text-secondary leading-relaxed">
+                Tim kami memasang CCTV sejak 2020, dari rumah dan ruko sampai hotel, instansi pemerintah, dan pabrik.
+              </p>
             </div>
           </ScrollReveal>
         </div>
@@ -396,6 +399,14 @@ export default function Home() {
               </ScrollReveal>
             ))}
           </div>
+          <ScrollReveal className="mt-8 max-w-3xl">
+            <p className="text-text-secondary leading-relaxed">
+              Pernah ada pelanggan yang awalnya meminta 2 kamera. Setelah survei,
+              jumlahnya kami naikkan menjadi 4 supaya tidak ada area yang luput
+              dari kamera. Karena itu jumlah kamera kami tentukan setelah melihat
+              lokasi, dan disesuaikan dengan budget Anda.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
 
