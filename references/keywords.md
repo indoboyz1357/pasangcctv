@@ -8,6 +8,7 @@ Satu keyword utama hanya untuk satu halaman. Volume pencarian belum dicek: isi k
 |---|---|---|---|---|---|
 | Beranda | / | pasang cctv | jasa pasang cctv, pemasangan cctv, pasang cctv jabodetabek, pasang cctv rumah, pasang cctv ruko | Mencari jasa (lokal, komersial) | belum dicek |
 | Paket | /paket-cctv/ | paket cctv | harga paket cctv, paket cctv lengkap, paket cctv 4 kamera, paket cctv 2 kamera, paket cctv 8 kamera | Membandingkan harga | belum dicek |
+| Area | /area/ | area pasang cctv | pasang cctv jakarta, pasang cctv tangerang, pasang cctv depok, pasang cctv bekasi, pasang cctv bogor | Jasa lokal dan komersial | belum dicek |
 | Tentang | /tentang/ | tim pasang cctv | teknisi cctv, tentang pasangcctv, survei cctv gratis. Tanpa nama area (fokus Jabodetabek) | Kepercayaan dan navigasi | belum dicek |
 | Kontak | /kontak/ | kontak pasang cctv | hubungi teknisi cctv, survei cctv gratis, alamat pasang cctv jabodetabek, konsultasi pasang cctv | Komersial dan transaksional | belum dicek |
 

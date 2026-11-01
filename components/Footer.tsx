@@ -48,6 +48,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  href="/area/"
+                  className="hover:text-white transition-colors"
+                >
+                  Area Layanan
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/tentang/"
                   className="hover:text-white transition-colors"
                 >

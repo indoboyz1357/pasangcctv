@@ -42,6 +42,15 @@ export const PAGES = {
     ogAlt: "PasangCCTV, tim pasang CCTV untuk Jabodetabek",
     lastModified: "2026-10-31",
   },
+  area: {
+    path: "/area/",
+    title: `Area Pasang CCTV Jabodetabek: Survei Gratis | ${SITE.name}`,
+    description:
+      "Cakupan area pasang CCTV dan survei gratis di Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Teknisi datang cek denah dan jalur kabel. Hubungi kami.",
+    ogImage: "/og/home.png",
+    ogAlt: "PasangCCTV, cakupan area pasang CCTV dan survei gratis Jabodetabek",
+    lastModified: "2026-11-01",
+  },
   kontak: {
     path: "/kontak/",
     title: `Kontak Pasang CCTV Jabodetabek: Survei Gratis | ${SITE.name}`,

@@ -40,6 +40,12 @@ export function Navbar() {
             Paket CCTV
           </Link>
           <Link
+            href="/area/"
+            className="text-text-secondary hover:text-white transition-colors"
+          >
+            Area Layanan
+          </Link>
+          <Link
             href="/tentang/"
             className="text-text-secondary hover:text-white transition-colors"
           >
@@ -95,6 +101,13 @@ export function Navbar() {
             className="text-text-secondary hover:text-white transition-colors py-2"
           >
             Paket CCTV
+          </Link>
+          <Link
+            href="/area/"
+            onClick={() => setOpen(false)}
+            className="text-text-secondary hover:text-white transition-colors py-2"
+          >
+            Area Layanan
           </Link>
           <Link
             href="/tentang/"

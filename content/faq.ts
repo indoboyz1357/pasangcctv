@@ -145,3 +145,30 @@ export const CONTACT_FAQ: FaqItem[] = [
   },
 ];
 
+export const AREA_FAQ: FaqItem[] = [
+  {
+    question: "Apakah ada biaya transport survei untuk lokasi seperti Bogor atau Cikarang?",
+    answer:
+      "Tidak ada. Survei lokasi gratis tanpa biaya transport tambahan untuk seluruh area Jabodetabek, mulai dari perumahan di Bogor hingga kawasan industri Cikarang.",
+  },
+  {
+    question: "Berapa lama teknisi bisa datang ke lokasi setelah kami menghubungi?",
+    answer:
+      `Waktu kunjungan teknisi disepakati bersama melalui WhatsApp di ${CONTACT.phone}. Untuk sebagian besar wilayah Jabodetabek, survei dapat dijadwalkan pada hari yang sama atau hari berikutnya.`,
+  },
+  {
+    question: "Bagaimana jika jalur kabel di rumah melebihi kuota bawaan paket?",
+    answer:
+      "Setiap paket sudah menyertakan jatah kabel coaxial yang cukup. Jika denah bangunan memanjang dan membutuhkan kabel tambahan, kelebihannya dihitung Rp6.000 per meter untuk kabel coaxial RG59+P.",
+  },
+  {
+    question: "Apakah teknisi melayani survei dan pasang di akhir pekan?",
+    answer:
+      "Ya. Kantor kami di Ciledug, Tangerang beroperasi 24 jam dan teknisi kami melayani pemasangan setiap hari, termasuk hari Sabtu dan Minggu.",
+  },
+  {
+    question: "Kapan pembayaran paket pasang CCTV dilakukan?",
+    answer:
+      "Untuk paket 2 sampai 8 kamera, pembayaran baru dilakukan setelah seluruh kamera terpasang dan pemantauan di HP aktif. Untuk paket 9 sampai 16 kamera, berlaku uang muka 50 persen dan pelunasan setelah serah terima.",
+  },
+];
