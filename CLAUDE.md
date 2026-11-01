@@ -50,17 +50,18 @@ Saat membuat atau mengubah **halaman mana pun** (beranda, paket, layanan, area, 
 Wajib untuk setiap halaman:
 - Metadata dibuat lewat `buildMetadata()` di `content/seo.ts` (title, description, canonical, Open Graph, Twitter Card)
 - Satu H1 yang memuat keyword utama, sesuai `references/keywords.md`
+- Jumlah kata wajib antara **800 sampai 2.000 kata** (diuji otomatis di `seo-check.mjs`)
+- Keyword density antara **0,5% sampai 1,5%** (maksimal 2,0%), wajib ada di 100 kata pertama dan penutup
 - Schema JSON-LD lewat komponen `JsonLd`, isinya sama dengan teks yang tampil
-- Link internal dengan anchor yang dicatat di `references/internal-links.md`
-- Gambar hanya dari `references/images.md` yang berstatus "boleh", dengan `alt`, `width`, dan `height`. Nama file berbahasa Indonesia yang menjelaskan isi, disimpan di `public/images/`, tidak memuat "cctvgo"
+- Link internal valid (tanpa broken link / 404) dengan anchor yang dicatat di `references/internal-links.md`
+- Gambar hanya dari `references/images.md` yang berstatus "boleh", dengan `alt`, `width`, dan `height`, ukuran file di bawah 200 KB. Nama file berbahasa Indonesia yang menjelaskan isi, disimpan di `public/images/`, tidak memuat "cctvgo"
+- **Tanpa author box personal**: byline dan entitas hanya atas nama "Tim PasangCCTV" (schema Organization)
 
 Tambahan untuk artikel panjang:
 - FAQ dengan FAQPage schema (JSON-LD)
 - Breadcrumb dan BreadcrumbList schema
-- Byline penulis "Tim PasangCCTV" dan schema `author` bertipe Organization (bukan Person), tanpa nama pribadi
 - Daftar isi dengan anchor link
 - 3 sampai 5 link internal, 2 sampai 3 link eksternal ke sumber otoritatif yang sudah dicek
-- Panjang dalam rentang 20 persen dari tiga hasil teratas untuk keyword (cek manual dan catat tanggalnya di page brief)
 
 **Halaman baru:** isi page brief dari `references/page-brief-template.md` dan minta persetujuan pemilik sebelum menulis kode.
 
