@@ -113,9 +113,11 @@ export default function Loewix2mpPage() {
             DC, kabel coaxial, jasa pemasangan, hingga setting pemantauan ke smartphone Anda.
           </p>
           <p className="mt-3 text-text-secondary leading-relaxed">
-            Seri Loewix 2MP merupakan paket terpopuler karena mengusung teknologi ColorVu yang
-            menjaga gambar video tetap berwarna terang pada malam hari, serta dilengkapi mikrofon
-            bawaan pada setiap kamera untuk merekam suara satu arah secara jernih.
+            Seri Loewix 2MP unggul berkat dua fitur eksklusif yang tidak ditemukan pada kamera
+            konvensional sekelasnya: pertama, teknologi <strong className="text-white">ColorVu 24 jam</strong> yang
+            mempertahankan rekaman berwarna terang bahkan di kondisi minim cahaya; kedua,
+            kemampuan <strong className="text-white">1-Way Audio</strong> melalui mikrofon built-in pada setiap
+            unit kamera untuk merekam suara satu arah secara jernih langsung ke hard disk DVR.
           </p>
           <p className="mt-3 text-sm text-text-secondary">
             Ingin membandingkan dengan seri lain seperti HiLook dan Hikvision? Buka halaman{" "}
@@ -234,12 +236,17 @@ export default function Loewix2mpPage() {
 
                 <div className="bg-bg/70 p-5 rounded-lg border border-border space-y-2">
                   <h3 className="font-bold text-white text-base">
-                    Mikrofon Terpasang (Audio 1 Arah)
+                    Rekam Suara 1 Arah (1-Way Audio)
                   </h3>
                   <p className="text-sm">
-                    Setiap unit kamera Loewix telah dibekali mikrofon built-in. Rekaman video
-                    tersimpan bersama rekaman audio di hard disk DVR, sangat berguna untuk
-                    mengawasi area meja kasir, ruang transaksi toko, maupun pintu masuk rumah.
+                    Setiap unit kamera Loewix 2MP dilengkapi mikrofon built-in yang merekam suara
+                    satu arah secara otomatis bersamaan dengan rekaman video. Audio tersimpan
+                    langsung di hard disk DVR tanpa membutuhkan kabel atau perangkat tambahan.
+                    Fitur ini sangat berguna untuk memantau percakapan di area meja kasir, pintu
+                    masuk toko atau ruko, ruang transaksi, maupun pagar depan rumah. Perlu
+                    diperhatikan bahwa fitur ini bersifat <em>satu arah</em>: kamera dapat
+                    menangkap dan merekam suara dari lingkungan sekitar, namun tidak mendukung
+                    komunikasi dua arah (talk-back) dari perangkat pemantau ke lokasi kamera.
                   </p>
                 </div>
               </div>
@@ -250,6 +257,14 @@ export default function Loewix2mpPage() {
                 maupun ruangan ruko. Keuntungan lain, konsumsi ruang rekaman pada hard disk
                 jauh lebih hemat dibanding kamera 5MP, sehingga riwayat rekaman Anda bertahan
                 lebih lama sebelum tertimpa secara otomatis.
+              </p>
+              <p>
+                Kombinasi ColorVu dan 1-Way Audio menjadikan kamera Loewix 2MP sebagai
+                solusi pengawasan yang lebih informatif dibanding kamera standar: rekaman
+                video tidak hanya memperlihatkan <em>apa</em> yang terjadi, tetapi juga
+                merekam <em>percakapan atau suara</em> yang berlangsung di lokasi tersebut.
+                Hal ini sangat membantu saat memutar ulang rekaman untuk keperluan investigasi
+                atau konfirmasi kejadian.
               </p>
             </div>
           </ScrollReveal>
