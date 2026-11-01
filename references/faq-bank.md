@@ -18,7 +18,7 @@ FAQ di `content/faq.ts` hanya boleh berisi pertanyaan dari file ini yang statusn
 | Apakah bisa memilih kamera indoor atau outdoor? | Beranda | stats.md (Loewix) |
 | Apa yang termasuk dalam paket CCTV? | Paket | stats.md |
 | Apa perbedaan Loewix, HiLook, dan Hikvision? | Paket | stats.md dan pengetahuan umum |
-| Bagaimana cara pembayaran untuk paket Loewix? | Paket | stats.md |
+| Bagaimana cara pembayaran? | Paket | stats.md (berlaku untuk semua paket) |
 | Berapa kapasitas DVR dan hard disk di paket Loewix? | Paket | stats.md (tabel Loewix) |
 | Berapa jumlah kamera yang tepat untuk ruko atau kantor? | Paket | stats.md (rekomendasi disetujui pemilik) |
 
@@ -38,3 +38,13 @@ FAQ di `content/faq.ts` hanya boleh berisi pertanyaan dari file ini yang statusn
 - Apa beda DVR dan NVR?
 - Apa beda kamera 2MP dan 5MP?
 - Apakah CCTV bisa dilihat dari HP?
+
+
+## FAQ halaman Tentang (/tentang/), disetujui 2026-10-31
+
+| Pertanyaan | Halaman | Sumber |
+|---|---|---|
+| Sejak kapan PasangCCTV memasang CCTV? | Tentang | stats.md (pengalaman sejak 2020) |
+| Wilayah mana yang dilayani? | Tentang | stats.md (Jabodetabek) |
+| Jenis tempat apa saja yang pernah dipasang? | Tentang | stats.md (jenis proyek) |
+| Apakah teknisi mengajarkan cara melihat rekaman? | Tentang | Pemilik 2026-10-31 (setting ke HP dan cara lihat playback) |

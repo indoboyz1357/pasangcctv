@@ -33,7 +33,7 @@ Setiap klaim di situs harus punya sumber. Sumber utama: `stats.md`. Sumber kedua
 - Teknisi setting ke HP dan mengajarkan cara melihat playback atau rekaman
 - Semua paket sudah termasuk kamera, DVR, hard disk, kabel, pemasangan, dan setting ke HP
 - Rekomendasi jumlah kamera: rumah satu lantai 2 sampai 4, rumah dua lantai 4 sampai 8, ruko dua lantai 4, kantor 6 sampai 8
-- Kabel di luar paket: Rp6.000 per meter (coaxial RG59+P, analog), Rp9.000 per meter (kabel LAN, IP camera)
+- Kabel di luar paket: Rp6.000 per meter (coaxial RG59+P, analog). Tarif kabel LAN belum dipakai.
 - Cara bayar: 2 sampai 8 kamera setelah pemasangan, 9 sampai 16 kamera DP 50 persen sisanya setelah pemasangan
 - Nama usaha dan suara penulis: PasangCCTV, "Tim PasangCCTV"
 

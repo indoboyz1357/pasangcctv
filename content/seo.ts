@@ -33,6 +33,15 @@ export const PAGES = {
     ogAlt: "PasangCCTV, daftar harga paket CCTV terpasang",
     lastModified: "2026-10-31",
   },
+  tentang: {
+    path: "/tentang/",
+    title: `Tentang Kami: Tim Pasang CCTV untuk Jabodetabek | ${SITE.name}`,
+    description:
+      "Tim PasangCCTV memasang CCTV sejak 2020 untuk rumah, ruko, hotel, instansi, dan pabrik di Jabodetabek. Survei gratis, hubungi kami lewat WhatsApp.",
+    ogImage: "/og/home.png",
+    ogAlt: "PasangCCTV, tim pasang CCTV untuk Jabodetabek",
+    lastModified: "2026-10-31",
+  },
 } as const satisfies Record<string, PageSeo>;
 
 export function buildMetadata(page: PageSeo): Metadata {

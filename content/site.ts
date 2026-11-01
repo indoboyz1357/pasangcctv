@@ -59,6 +59,7 @@ export const WARRANTY = {
 export const PAGE_LABELS: Record<string, string> = {
   "/": "Beranda",
   "/paket-cctv/": "Paket CCTV",
+  "/tentang/": "Tentang Kami",
 };
 
 export function whatsappLink(message: string, pageLabel?: string): string {

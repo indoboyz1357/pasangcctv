@@ -186,8 +186,8 @@ const REASONS = [
     desc: "Pada paket Loewix, Anda bebas menentukan berapa kamera yang dipasang di dalam dan berapa yang di luar.",
   },
   {
-    title: "Kantor fisik di Ciledug, buka 24 jam",
-    desc: "Kami punya kantor fisik di Ciledug, Kota Tangerang, yang buka 24 jam.",
+    title: "Kantor fisik, buka 24 jam",
+    desc: "Kami punya kantor fisik yang buka 24 jam dan melayani seluruh wilayah Jabodetabek. Alamat lengkap ada di bagian bawah halaman ini.",
   },
 ];
 
@@ -281,16 +281,17 @@ export default function Home() {
             <div className="lg:col-span-5">
               <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl bg-surface group">
                 <Image
-                  src="/images/kotak-kamera-hilook-turbo-hd.webp"
-                  alt="Tumpukan kotak kamera CCTV HiLook Turbo HD indoor dan outdoor"
+                  src="/images/ilustrasi-pasang-cctv-rumah.svg"
+                  alt="Ilustrasi kamera CCTV di sudut rumah dengan area pantauan dan tampilan kamera di HP"
                   width={800}
                   height={600}
                   sizes="(min-width: 1024px) 40vw, 100vw"
                   priority
+                  unoptimized
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="p-3 bg-surface/90 border-t border-border text-xs text-text-secondary">
-                  Kamera HiLook Turbo HD
+                  Ilustrasi pemasangan CCTV di rumah
                 </div>
               </div>
             </div>
@@ -318,7 +319,7 @@ export default function Home() {
                 Kamera yang tersedia: Loewix 2MP ColorVu (gambar tetap berwarna di malam hari), HiLook, dan Hikvision.
               </p>
               <p className="mt-3 text-text-secondary leading-relaxed">
-                Tim kami memasang CCTV sejak 2020, dari rumah dan ruko sampai hotel, instansi pemerintah, dan pabrik.
+                Kami memasang CCTV sejak 2020, dari rumah dan ruko sampai hotel, instansi pemerintah, dan pabrik. Anda bisa membaca <Link href="/tentang/" className="text-accent hover:underline">tentang tim PasangCCTV</Link> di halaman tersendiri.
               </p>
             </div>
           </ScrollReveal>

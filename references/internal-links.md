@@ -9,6 +9,7 @@ Setiap anchor dipakai satu kali per halaman. Perbarui file ini setiap kali menam
 | paket CCTV 4 kamera | /paket-cctv/ | Bagian pengantar |
 | Lihat daftar paket CCTV lengkap | /paket-cctv/ | Tombol hero |
 | Lihat tabel harga semua paket CCTV | /paket-cctv/ | Akhir cuplikan paket |
+| tentang tim PasangCCTV | /tentang/ | Bagian pengantar |
 
 ## Paket (/paket-cctv/)
 
@@ -17,6 +18,15 @@ Setiap anchor dipakai satu kali per halaman. Perbarui file ini setiap kali menam
 | Beranda | / | Breadcrumb |
 | layanan pasang CCTV | / | Paragraf pembuka |
 | Lihat jasa pasang CCTV | / | Tombol di bagian akhir |
+| tim pasang CCTV kami | /tentang/ | Panduan memilih jumlah kamera |
+
+## Tentang (/tentang/)
+
+| Anchor | Tujuan | Lokasi di halaman |
+|---|---|---|
+| Beranda | / | Breadcrumb |
+| layanan pasang CCTV untuk rumah dan ruko | / | Paragraf pembuka |
+| paket CCTV Loewix, HiLook, dan Hikvision | /paket-cctv/ | Bagian merek dan garansi |
 
 ## Aturan
 - Dari beranda ke paket: anchor memakai variasi "paket cctv". Dari paket ke beranda: anchor memakai variasi "pasang cctv".

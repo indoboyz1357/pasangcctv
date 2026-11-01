@@ -249,7 +249,11 @@ export default function PaketCCTV() {
               </p>
               <p>
                 Kalau Anda belum yakin, ceritakan denah dan area yang ingin
-                dipantau kepada teknisi saat survei gratis. Penentuan jumlah kamera
+                dipantau kepada teknisi saat survei gratis dari{" "}
+                <Link href="/tentang/" className="text-accent hover:underline">
+                  tim pasang CCTV kami
+                </Link>
+                . Penentuan jumlah kamera
                 yang tepat dilakukan setelah melihat lokasi secara langsung.
               </p>
             </div>

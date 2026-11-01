@@ -13,6 +13,7 @@ const outDir = join(__dirname, "../out");
 const pages = [
   { file: "index.html", url: "https://pasangcctv.my.id/" },
   { file: "paket-cctv/index.html", url: "https://pasangcctv.my.id/paket-cctv/" },
+  { file: "tentang/index.html", url: "https://pasangcctv.my.id/tentang/" },
 ];
 
 let failures = 0;

@@ -46,6 +46,14 @@ export function Footer() {
                   Paket CCTV
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/tentang/"
+                  className="hover:text-white transition-colors"
+                >
+                  Tentang Kami
+                </Link>
+              </li>
             </ul>
           </div>
 

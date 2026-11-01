@@ -8,6 +8,7 @@ Satu keyword utama hanya untuk satu halaman. Volume pencarian belum dicek: isi k
 |---|---|---|---|---|---|
 | Beranda | / | pasang cctv | jasa pasang cctv, pemasangan cctv, pasang cctv jabodetabek, pasang cctv rumah, pasang cctv ruko | Mencari jasa (lokal, komersial) | belum dicek |
 | Paket | /paket-cctv/ | paket cctv | harga paket cctv, paket cctv lengkap, paket cctv 4 kamera, paket cctv 2 kamera, paket cctv 8 kamera | Membandingkan harga | belum dicek |
+| Tentang (kontak digabung) | /tentang/ | tim pasang cctv | teknisi cctv, tentang pasangcctv, survei cctv gratis. Tanpa nama area (keputusan pemilik 2026-10-31: fokus Jabodetabek) | Kepercayaan dan navigasi | belum dicek |
 
 ## Calon halaman (belum dibuat, butuh data pemilik)
 
@@ -18,7 +19,6 @@ Satu keyword utama hanya untuk satu halaman. Volume pencarian belum dicek: isi k
 | Artikel: beda DVR dan NVR | dvr dan nvr bedanya | Informasi | Pengetahuan umum yang akurat |
 | Artikel: kapasitas hard disk CCTV | berapa hard disk cctv | Informasi | Hitungan hanya jika pemilik memberi dasar angka |
 | Artikel: cara melihat CCTV dari HP | cara lihat cctv dari hp | Informasi | Langkah sesuai aplikasi yang dipakai pemilik |
-| Halaman kontak dan tentang | pasang cctv ciledug | Navigasi dan kepercayaan | Nama usaha, foto kantor, profil bisnis dari pemilik |
 
 ## Aturan
 - Tambahkan baris di sini sebelum membuat halaman baru, lalu buat page brief (`page-brief-template.md`).

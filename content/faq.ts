@@ -42,7 +42,7 @@ export const HOME_FAQ: FaqItem[] = [
   {
     question: "Area mana saja yang dilayani?",
     answer:
-      "Kami melayani Jabodetabek: Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Kantor kami ada di Ciledug, Kota Tangerang, dan buka 24 jam.",
+      "Kami melayani Jabodetabek: Jakarta, Bogor, Depok, Tangerang, dan Bekasi. Kantor kami buka 24 jam.",
   },
   {
     question: "Berapa meter kabel yang termasuk paket Loewix?",
@@ -90,5 +90,29 @@ export const PACKAGE_FAQ: FaqItem[] = [
     question: "Berapa kapasitas DVR dan hard disk di paket Loewix?",
     answer:
       "Paket 2 sampai 4 kamera memakai DVR 4 channel dan hard disk 500GB. Paket 5 kamera memakai DVR 8 channel dan hard disk 500GB. Paket 6 sampai 8 kamera memakai DVR 8 channel dan hard disk 1TB. Paket 9 dan 10 kamera memakai DVR 16 channel dan hard disk 1TB. Paket 11 sampai 16 kamera memakai DVR 16 channel dan hard disk 2TB.",
+  },
+];
+
+
+export const ABOUT_FAQ: FaqItem[] = [
+  {
+    question: "Sejak kapan PasangCCTV memasang CCTV?",
+    answer:
+      "Tim kami memasang CCTV sejak 2020, mulai dari rumah dan ruko sampai proyek skala lingkungan RW.",
+  },
+  {
+    question: "Wilayah mana yang dilayani?",
+    answer:
+      "Seluruh Jabodetabek: Jakarta, Bogor, Depok, Tangerang, dan Bekasi.",
+  },
+  {
+    question: "Jenis tempat apa saja yang pernah dipasang?",
+    answer:
+      "Rumah, ruko, kantor, gudang, hotel, instansi pemerintah, dan pabrik. Kami juga pernah mengerjakan pemasangan dengan kabel fiber optik point to point dan kamera thermal PTZ.",
+  },
+  {
+    question: "Apakah teknisi mengajarkan cara melihat rekaman?",
+    answer:
+      "Ya. Pada serah terima, teknisi mengatur pemantauan dari HP dan mengajarkan cara melihat playback atau rekaman.",
   },
 ];

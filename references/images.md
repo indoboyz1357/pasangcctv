@@ -6,7 +6,7 @@ sebelum statusnya "boleh" dan asal gambarnya jelas.
 
 ## Aturan pakai
 
-- Keputusan pemilik 2026-10-31: tidak menambah gambar selain hero. Daftar di bawah menjadi arsip dan belum dipakai di halaman.
+- Keputusan pemilik 2026-10-31 (diperbarui): gambar dari daftar ini boleh dipakai bila lolos aturan di bawah. Foto yang dipakai dicatat di bagian halaman masing-masing.
 - Hanya gambar milik pemilik: foto sendiri atau gambar yang dibuat sendiri. Bukan gambar dari internet,
   bukan materi promosi pabrikan, bukan gambar dari situs lain.
 - Gambar buatan AI tidak boleh dipakai seolah-olah foto pekerjaan nyata. Pakai hanya jika diberi keterangan
@@ -76,3 +76,22 @@ Tidak boleh dipakai sebagai foto pekerjaan nyata.
 | `.../v1792847116/cctvgo_5.webp` | Tumpukan kotak kamera Dahua | Merek Dahua tidak ada di stats |
 
 Awalan lengkap semua URL: `https://res.cloudinary.com/w8egcbkm/image/upload/`
+
+
+## Hero beranda (diganti 2026-10-31)
+- File: `public/images/ilustrasi-pasang-cctv-rumah.svg`, ilustrasi vektor buatan sendiri (bukan foto), 800x600.
+- Isi: rumah, kamera di sudut atap, area pantauan, dan tampilan 4 kamera di HP. Tanpa teks, tanpa merek, tanpa orang nyata.
+- Status: boleh dipakai. Keterangan di halaman: "Ilustrasi pemasangan CCTV di rumah".
+- Foto lama `kotak-kamera-hilook-turbo-hd.webp` masih ada di `public/images/` tapi tidak dipakai di beranda.
+
+
+## Halaman Tentang (/tentang/), diperbarui 2026-10-31
+Pemilik meminta gambar dari daftar ini dipakai. Dari bagian A dipilih 3 foto produk tanpa orang. Foto diambil dengan `node scripts/ambil-gambar.mjs` dan hanya tampil bila file sudah ada di `public/images/`.
+
+| File lokal | Asal | Alt |
+|---|---|---|
+| `isi-paket-cctv-hikvision-turbo-hd.webp` | `cctv123_2.webp` | Isi paket CCTV Hikvision Turbo HD: kamera, DVR, hard disk, power supply, dan kabel |
+| `tumpukan-kotak-kamera-hikvision.webp` | `gb123123.webp` | Tumpukan kotak kamera CCTV Hikvision |
+| `dua-kamera-dome-hilook.webp` | `cctvgo_4.webp` (nama diganti, wajib bebas "cctvgo") | Dua kamera dome CCTV HiLook |
+
+Tidak dipakai: foto di meja toko (mirip foto pertama), foto kamera di tiang (belum jelas hasil pemasangan siapa), semua tangkapan layar rekaman (ada orang atau interior pihak lain), bagian C (buatan AI), bagian D (merek di luar stats.md).
