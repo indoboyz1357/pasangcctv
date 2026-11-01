@@ -69,6 +69,24 @@ const LOEWIX: Series = {
   ],
 };
 
+export const LOEWIX_ITEMIZED = [
+  { cameras: 2, price: 2400000, priceFormatted: "Rp2.400.000", indoor: 1, outdoor: 1, dvr: "DVR Loewix 1080N 4 Channel", hdd: "500GB", psu: "PSU 4 Port", connectors: 4, cableMeters: 40 },
+  { cameras: 3, price: 3100000, priceFormatted: "Rp3.100.000", indoor: 1, outdoor: 2, dvr: "DVR Loewix 1080N 4 Channel", hdd: "500GB", psu: "PSU 4 Port", connectors: 6, cableMeters: 60 },
+  { cameras: 4, price: 3750000, priceFormatted: "Rp3.750.000", indoor: 2, outdoor: 2, dvr: "DVR Loewix 1080N 4 Channel", hdd: "500GB", psu: "PSU 4 Port", connectors: 8, cableMeters: 80 },
+  { cameras: 5, price: 4650000, priceFormatted: "Rp4.650.000", indoor: 2, outdoor: 3, dvr: "DVR Loewix 1080N 8 Channel", hdd: "500GB", psu: "PSU 8 Port", connectors: 10, cableMeters: 100 },
+  { cameras: 6, price: 5850000, priceFormatted: "Rp5.850.000", indoor: 3, outdoor: 3, dvr: "DVR Loewix 1080N 8 Channel", hdd: "1TB", psu: "PSU 8 Port", connectors: 12, cableMeters: 120 },
+  { cameras: 7, price: 6550000, priceFormatted: "Rp6.550.000", indoor: 3, outdoor: 4, dvr: "DVR Loewix 1080N 8 Channel", hdd: "1TB", psu: "PSU 8 Port", connectors: 14, cableMeters: 140 },
+  { cameras: 8, price: 7150000, priceFormatted: "Rp7.150.000", indoor: 4, outdoor: 4, dvr: "DVR Loewix 1080N 8 Channel", hdd: "1TB", psu: "PSU 8 Port", connectors: 16, cableMeters: 160 },
+  { cameras: 9, price: 8550000, priceFormatted: "Rp8.550.000", indoor: 4, outdoor: 5, dvr: "DVR Loewix 1080N 16 Channel", hdd: "1TB", psu: "PSU 16 Port", connectors: 18, cableMeters: 180 },
+  { cameras: 10, price: 9250000, priceFormatted: "Rp9.250.000", indoor: 5, outdoor: 5, dvr: "DVR Loewix 1080N 16 Channel", hdd: "1TB", psu: "PSU 16 Port", connectors: 20, cableMeters: 200 },
+  { cameras: 11, price: 10650000, priceFormatted: "Rp10.650.000", indoor: 5, outdoor: 6, dvr: "DVR Loewix 1080N 16 Channel", hdd: "2TB", psu: "PSU 16 Port", connectors: 22, cableMeters: 220 },
+  { cameras: 12, price: 11300000, priceFormatted: "Rp11.300.000", indoor: 6, outdoor: 6, dvr: "DVR Loewix 1080N 16 Channel", hdd: "2TB", psu: "PSU 16 Port", connectors: 24, cableMeters: 240 },
+  { cameras: 13, price: 11950000, priceFormatted: "Rp11.950.000", indoor: 6, outdoor: 7, dvr: "DVR Loewix 1080N 16 Channel", hdd: "2TB", psu: "PSU 16 Port", connectors: 26, cableMeters: 260 },
+  { cameras: 14, price: 12650000, priceFormatted: "Rp12.650.000", indoor: 7, outdoor: 7, dvr: "DVR Loewix 1080N 16 Channel", hdd: "2TB", psu: "PSU 16 Port", connectors: 28, cableMeters: 280 },
+  { cameras: 15, price: 13300000, priceFormatted: "Rp13.300.000", indoor: 7, outdoor: 8, dvr: "DVR Loewix 1080N 16 Channel", hdd: "2TB", psu: "PSU 16 Port", connectors: 30, cableMeters: 300 },
+  { cameras: 16, price: 13950000, priceFormatted: "Rp13.950.000", indoor: 8, outdoor: 8, dvr: "DVR Loewix 1080N 16 Channel", hdd: "2TB", psu: "PSU 16 Port", connectors: 32, cableMeters: 320 },
+];
+
 // Seri lain — hanya 2, 4, 8, 16 kamera.
 // Spesifikasi DVR, hard disk, dan kabel belum diketahui, tidak ditulis.
 function otherSeries(

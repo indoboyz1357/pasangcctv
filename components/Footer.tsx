@@ -45,6 +45,16 @@ export function Footer() {
                 >
                   Paket CCTV
                 </Link>
+                <ul className="pl-3 mt-1 space-y-1 text-xs text-text-muted">
+                  <li>
+                    <Link
+                      href="/paket-cctv/loewix-2mp/"
+                      className="hover:text-white transition-colors"
+                    >
+                      • Paket Loewix 2MP ColorVu
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link

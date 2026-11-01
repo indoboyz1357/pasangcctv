@@ -60,6 +60,15 @@ export const PAGES = {
     ogAlt: "PasangCCTV, kontak dan layanan survei pasang CCTV Jabodetabek",
     lastModified: "2026-11-01",
   },
+  loewix2mp: {
+    path: "/paket-cctv/loewix-2mp/",
+    title: `Paket CCTV Loewix 2MP ColorVu Audio | ${SITE.name}`,
+    description:
+      "Harga paket CCTV Loewix 2MP ColorVu 2 sampai 16 kamera terpasang mulai Rp2.400.000. Rekam suara, gambar berwarna malam hari, gratis survei. Hubungi kami.",
+    ogImage: "/og/paket.png",
+    ogAlt: "PasangCCTV, paket CCTV Loewix 2MP ColorVu Audio terpasang",
+    lastModified: "2026-11-01",
+  },
 } as const satisfies Record<string, PageSeo>;
 
 export function buildMetadata(page: PageSeo): Metadata {

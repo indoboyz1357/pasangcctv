@@ -11,6 +11,7 @@ Satu keyword utama hanya untuk satu halaman. Volume pencarian belum dicek: isi k
 | Area | /area/ | area pasang cctv | pasang cctv jakarta, pasang cctv tangerang, pasang cctv depok, pasang cctv bekasi, pasang cctv bogor | Jasa lokal dan komersial | belum dicek |
 | Tentang | /tentang/ | tim pasang cctv | teknisi cctv, tentang pasangcctv, survei cctv gratis. Tanpa nama area (fokus Jabodetabek) | Kepercayaan dan navigasi | belum dicek |
 | Kontak | /kontak/ | kontak pasang cctv | hubungi teknisi cctv, survei cctv gratis, alamat pasang cctv jabodetabek, konsultasi pasang cctv | Komersial dan transaksional | belum dicek |
+| Loewix 2MP | /paket-cctv/loewix-2mp/ | paket cctv loewix 2mp | cctv loewix colorvu, harga loewix 2mp, paket cctv audio, spesifikasi cctv loewix | Komersial dan transaksional | belum dicek |
 
 ## Calon halaman (belum dibuat, butuh data pemilik)
 

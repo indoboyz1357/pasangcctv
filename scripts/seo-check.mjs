@@ -17,6 +17,7 @@ const pages = [
   { file: "area/index.html", url: "https://pasangcctv.my.id/area/", keyword: "area pasang cctv" },
   { file: "tentang/index.html", url: "https://pasangcctv.my.id/tentang/", keyword: "tim pasang cctv" },
   { file: "kontak/index.html", url: "https://pasangcctv.my.id/kontak/", keyword: "kontak pasang cctv" },
+  { file: "paket-cctv/loewix-2mp/index.html", url: "https://pasangcctv.my.id/paket-cctv/loewix-2mp/", keyword: "paket cctv loewix 2mp" },
 ];
 
 let failures = 0;

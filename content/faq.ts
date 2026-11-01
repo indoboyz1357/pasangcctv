@@ -172,3 +172,32 @@ export const AREA_FAQ: FaqItem[] = [
       "Untuk paket 2 sampai 8 kamera, pembayaran baru dilakukan setelah seluruh kamera terpasang dan pemantauan di HP aktif. Untuk paket 9 sampai 16 kamera, berlaku uang muka 50 persen dan pelunasan setelah serah terima.",
   },
 ];
+
+export const LOEWIX_FAQ: FaqItem[] = [
+  {
+    question: "Apa keunggulan utama kamera Loewix 2MP ColorVu?",
+    answer:
+      "Keunggulan utamanya adalah gambar video tetap berwarna di malam hari (ColorVu) dan memiliki mikrofon bawaan untuk merekam suara 1 arah di sekitar titik kamera.",
+  },
+  {
+    question: "Apakah bisa bebas memilih kombinasi kamera indoor dan outdoor?",
+    answer:
+      "Bisa. Pada paket Loewix, Anda bebas menentukan berapa unit kamera indoor dome untuk ruangan dalam dan berapa kamera outdoor bullet tahan cuaca untuk halaman luar tanpa perbedaan biaya.",
+  },
+  {
+    question: "Berapa kapasitas DVR dan hard disk pada paket Loewix 2MP?",
+    answer:
+      "Paket 2 sampai 4 kamera memakai DVR 4 channel dan hard disk 500GB. Paket 5 kamera memakai DVR 8 channel dan HDD 500GB. Paket 6 sampai 8 kamera memakai DVR 8 channel dan HDD 1TB. Paket 9 dan 10 kamera memakai DVR 16 channel dan HDD 1TB. Paket 11 sampai 16 kamera memakai DVR 16 channel dan HDD 2TB.",
+  },
+  {
+    question: "Apakah sudah termasuk konektor dan power supply central?",
+    answer:
+      "Ya. Semua paket Loewix 2MP sudah lengkap termasuk power supply central 4, 8, atau 16 port, konektor BNC dan DC, kabel coaxial RG59+P, jasa pemasangan, dan setting pemantauan ke HP.",
+  },
+  {
+    question: "Berapa lama garansi untuk paket CCTV Loewix 2MP?",
+    answer:
+      "Kamera Loewix pada paket ini bergaransi unit selama 1 tahun.",
+  },
+];
+
