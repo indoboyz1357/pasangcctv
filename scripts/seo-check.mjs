@@ -21,6 +21,7 @@ const pages = [
   { file: "paket-cctv/hilook-2mp/index.html", url: "https://pasangcctv.my.id/paket-cctv/hilook-2mp/", keyword: "paket cctv hilook 2mp" },
   { file: "paket-cctv/hikvision-2mp/index.html", url: "https://pasangcctv.my.id/paket-cctv/hikvision-2mp/", keyword: "paket cctv hikvision 2mp" },
   { file: "paket-cctv/hilook-5mp/index.html", url: "https://pasangcctv.my.id/paket-cctv/hilook-5mp/", keyword: "paket cctv hilook 5mp" },
+  { file: "paket-cctv/hikvision-5mp/index.html", url: "https://pasangcctv.my.id/paket-cctv/hikvision-5mp/", keyword: "paket cctv hikvision 5mp" },
 ];
 
 let failures = 0;

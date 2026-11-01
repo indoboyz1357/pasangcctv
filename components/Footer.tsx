@@ -78,6 +78,14 @@ export function Footer() {
                       • Paket HiLook 5MP Ultra HD
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/paket-cctv/hikvision-5mp/"
+                      className="hover:text-white transition-colors"
+                    >
+                      • Paket Hikvision 5MP Ultra HD
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li>

@@ -93,6 +93,33 @@ export const PACKAGE_FAQ: FaqItem[] = [
   },
 ];
 
+export const HIKVISION_5MP_FAQ: FaqItem[] = [
+  {
+    question: "Berapa lama garansi unit untuk paket CCTV Hikvision 5MP?",
+    answer:
+      "Seluruh perangkat kamera dan DVR Hikvision 5MP pada paket ini dilindungi garansi unit selama 2 tahun.",
+  },
+  {
+    question: "Apa keunggulan utama kamera Hikvision 5MP dibanding 2MP?",
+    answer:
+      "Resolusi 5MP menghasilkan sekitar 2,5 kali jumlah piksel lebih banyak dibanding 2MP Full HD. Hasilnya, detail wajah dan nomor plat kendaraan dapat terbaca lebih jauh dan lebih tajam, cocok untuk area parkir luas, gerbang komplek, atau gudang besar yang membutuhkan identifikasi akurat dari rekaman.",
+  },
+  {
+    question: "Apakah komposisi kamera indoor dan outdoor bisa disesuaikan?",
+    answer:
+      "Bisa. Komposisi indoor dome dan outdoor bullet bebas ditentukan saat survei teknisi sesuai denah dan kebutuhan titik kamera, tanpa perbedaan biaya.",
+  },
+  {
+    question: "Komponen apa saja yang sudah termasuk dalam paket Hikvision 5MP?",
+    answer:
+      "Setiap paket sudah mencakup unit kamera Hikvision 5MP, DVR Hikvision 5MP, hard disk (500GB, 1TB, atau 2TB sesuai jumlah kamera), power supply port, konektor BNC dan DC, supporting device, kabel CCTV, jasa instalasi teknisi, dan konfigurasi aplikasi pemantauan di HP.",
+  },
+  {
+    question: "Bagaimana sistem pembayaran untuk paket Hikvision 5MP?",
+    answer:
+      "Untuk paket 2 sampai 8 kamera, pembayaran dilakukan setelah instalasi selesai dan sistem aktif di HP. Untuk paket 9 sampai 16 kamera, berlaku uang muka 50 persen dan pelunasan setelah pemasangan tuntas.",
+  },
+];
 
 export const ABOUT_FAQ: FaqItem[] = [
   {

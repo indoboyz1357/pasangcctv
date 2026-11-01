@@ -1,7 +1,7 @@
 // Data paket — semua angka dari references/stats.md
 // Jangan menambah atau mengubah harga tanpa memperbarui stats.md.
 // Harga diperbarui 2026-10-31: +Rp50.000 per paket (Loewix, HiLook 2MP, Hikvision 2MP)
-// Harga diperbarui 2026-11-01: +Rp50.000 per paket (HiLook 5MP). Lihat stats.md.
+// Harga diperbarui 2026-11-01: +Rp50.000 per paket (HiLook 5MP, Hikvision 5MP). Lihat stats.md.
 
 import { WARRANTY } from "@/content/site";
 
@@ -234,7 +234,42 @@ const HILOOK_5MP: Series = {
   ),
 };
 
-const HIKVISION_5MP = otherSeries("Hikvision", "5MP", [5450000, 7700000, 14600000, 28550000]);
+export const HIKVISION_5MP_ITEMIZED = [
+  { cameras: 2,  price: 5400000,  priceFormatted: "Rp5.400.000",  indoor: 1, outdoor: 1,  dvr: "DVR Hikvision 4 Ch 5MP",  hdd: "500GB", psu: "PSU 4 Port",   connectors: 4,  supporting: 1,   cableMeters: 40  },
+  { cameras: 3,  price: 6600000,  priceFormatted: "Rp6.600.000",  indoor: 1, outdoor: 2,  dvr: "DVR Hikvision 4 Ch 5MP",  hdd: "500GB", psu: "PSU 4 Port",   connectors: 6,  supporting: 1.5, cableMeters: 60  },
+  { cameras: 4,  price: 7650000,  priceFormatted: "Rp7.650.000",  indoor: 2, outdoor: 2,  dvr: "DVR Hikvision 4 Ch 5MP",  hdd: "500GB", psu: "PSU 4 Port",   connectors: 8,  supporting: 2,   cableMeters: 80  },
+  { cameras: 5,  price: 10750000, priceFormatted: "Rp10.750.000", indoor: 2, outdoor: 3,  dvr: "DVR Hikvision 8 Ch 5MP",  hdd: "500GB", psu: "PSU 8 Port",   connectors: 10, supporting: 2.5, cableMeters: 100 },
+  { cameras: 6,  price: 12350000, priceFormatted: "Rp12.350.000", indoor: 3, outdoor: 3,  dvr: "DVR Hikvision 8 Ch 5MP",  hdd: "1TB",   psu: "PSU 8 Port",   connectors: 12, supporting: 3,   cableMeters: 120 },
+  { cameras: 7,  price: 13550000, priceFormatted: "Rp13.550.000", indoor: 3, outdoor: 4,  dvr: "DVR Hikvision 8 Ch 5MP",  hdd: "1TB",   psu: "PSU 8 Port",   connectors: 14, supporting: 3.5, cableMeters: 140 },
+  { cameras: 8,  price: 14550000, priceFormatted: "Rp14.550.000", indoor: 4, outdoor: 4,  dvr: "DVR Hikvision 8 Ch 5MP",  hdd: "1TB",   psu: "PSU 8 Port",   connectors: 16, supporting: 4,   cableMeters: 160 },
+  { cameras: 9,  price: 20000000, priceFormatted: "Rp20.000.000", indoor: 4, outdoor: 5,  dvr: "DVR Hikvision 16 Ch 5MP", hdd: "1TB",   psu: "PSU 16 Port",  connectors: 18, supporting: 4.5, cableMeters: 180 },
+  { cameras: 10, price: 21050000, priceFormatted: "Rp21.050.000", indoor: 5, outdoor: 5,  dvr: "DVR Hikvision 16 Ch 5MP", hdd: "1TB",   psu: "PSU 16 Port",  connectors: 20, supporting: 5,   cableMeters: 200 },
+  { cameras: 11, price: 23000000, priceFormatted: "Rp23.000.000", indoor: 5, outdoor: 6,  dvr: "DVR Hikvision 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 22, supporting: 5.5, cableMeters: 220 },
+  { cameras: 12, price: 24000000, priceFormatted: "Rp24.000.000", indoor: 6, outdoor: 6,  dvr: "DVR Hikvision 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 24, supporting: 6,   cableMeters: 240 },
+  { cameras: 13, price: 25200000, priceFormatted: "Rp25.200.000", indoor: 6, outdoor: 7,  dvr: "DVR Hikvision 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 26, supporting: 6.5, cableMeters: 260 },
+  { cameras: 14, price: 26300000, priceFormatted: "Rp26.300.000", indoor: 7, outdoor: 7,  dvr: "DVR Hikvision 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 28, supporting: 7,   cableMeters: 280 },
+  { cameras: 15, price: 27450000, priceFormatted: "Rp27.450.000", indoor: 7, outdoor: 8,  dvr: "DVR Hikvision 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 30, supporting: 7.5, cableMeters: 300 },
+  { cameras: 16, price: 28500000, priceFormatted: "Rp28.500.000", indoor: 8, outdoor: 8,  dvr: "DVR Hikvision 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 32, supporting: 8,   cableMeters: 320 },
+];
+
+const HIKVISION_5MP: Series = {
+  id: "hikvision-5mp",
+  brand: "Hikvision",
+  name: "Hikvision",
+  resolution: "5MP Ultra HD",
+  title: "Hikvision 5MP Ultra HD",
+  warranty: WARRANTY.hikvision,
+  description:
+    "Kamera Hikvision 5MP, sekitar 2,5 kali jumlah piksel dibanding 2MP. Sudah termasuk DVR, hard disk, kabel, pemasangan, dan setting ke HP.",
+  hasSpecs: true,
+  packages: HIKVISION_5MP_ITEMIZED.map((item) =>
+    pkg(item.cameras, item.price, {
+      dvr: item.dvr,
+      hdd: item.hdd,
+      cable: `${item.cableMeters} meter`,
+    })
+  ),
+};
 
 // Urutan tampil di halaman: Loewix lebih dulu, lalu 2MP, lalu 5MP.
 export const SERIES: Series[] = [

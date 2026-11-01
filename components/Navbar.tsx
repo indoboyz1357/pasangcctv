@@ -38,9 +38,9 @@ const PACKAGE_LINKS = [
     highlight: false,
   },
   {
-    href: "/paket-cctv/#hikvision-5mp",
+    href: "/paket-cctv/hikvision-5mp/",
     title: "Hikvision 5MP Ultra HD",
-    desc: "Kualitas visual maksimal untuk usaha",
+    desc: "2–16 kamera, kualitas visual maksimal",
     highlight: false,
   },
 ];
