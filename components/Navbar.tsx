@@ -20,9 +20,9 @@ const PACKAGE_LINKS = [
     highlight: true,
   },
   {
-    href: "/paket-cctv/#hilook-2mp",
+    href: "/paket-cctv/hilook-2mp/",
     title: "HiLook 2MP Full HD",
-    desc: "Seri ekonomis dari Hikvision",
+    desc: "2–16 kamera komplit, garansi 2 tahun",
     highlight: false,
   },
   {

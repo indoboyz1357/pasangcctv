@@ -69,6 +69,15 @@ export const PAGES = {
     ogAlt: "PasangCCTV, paket CCTV Loewix 2MP ColorVu Audio terpasang",
     lastModified: "2026-11-01",
   },
+  hilook2mp: {
+    path: "/paket-cctv/hilook-2mp/",
+    title: `Paket CCTV HiLook 2MP Full HD | ${SITE.name}`,
+    description:
+      "Harga paket CCTV HiLook 2MP Full HD 2 sampai 16 kamera terpasang mulai Rp2.800.000. Garansi unit 2 tahun, gratis survei Jabodetabek. Hubungi kami via WA.",
+    ogImage: "/og/paket.png",
+    ogAlt: "PasangCCTV, paket CCTV HiLook 2MP Full HD terpasang",
+    lastModified: "2026-11-01",
+  },
 } as const satisfies Record<string, PageSeo>;
 
 export function buildMetadata(page: PageSeo): Metadata {

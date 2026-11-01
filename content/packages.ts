@@ -87,6 +87,43 @@ export const LOEWIX_ITEMIZED = [
   { cameras: 16, price: 13950000, priceFormatted: "Rp13.950.000", indoor: 8, outdoor: 8, dvr: "DVR Loewix 1080N 16 Channel", hdd: "2TB", psu: "PSU 16 Port", connectors: 32, cableMeters: 320 },
 ];
 
+export const HILOOK_2MP_ITEMIZED = [
+  { cameras: 2, price: 2800000, priceFormatted: "Rp2.800.000", indoor: 1, outdoor: 1, dvr: "DVR Hilook 4 Ch 2MP", hdd: "500GB", psu: "PSU 4 Port", connectors: 4, supporting: 1, cableMeters: 40 },
+  { cameras: 3, price: 3500000, priceFormatted: "Rp3.500.000", indoor: 1, outdoor: 2, dvr: "DVR Hilook 4 Ch 2MP", hdd: "500GB", psu: "PSU 4 Port", connectors: 6, supporting: 1.5, cableMeters: 60 },
+  { cameras: 4, price: 4200000, priceFormatted: "Rp4.200.000", indoor: 2, outdoor: 2, dvr: "DVR Hilook 4 Ch 2MP", hdd: "500GB", psu: "PSU 4 Port", connectors: 8, supporting: 2, cableMeters: 80 },
+  { cameras: 5, price: 5200000, priceFormatted: "Rp5.200.000", indoor: 2, outdoor: 3, dvr: "DVR Hilook 8 Ch 2MP", hdd: "500GB", psu: "PSU 8 Port", connectors: 10, supporting: 2.5, cableMeters: 100 },
+  { cameras: 6, price: 6400000, priceFormatted: "Rp6.400.000", indoor: 3, outdoor: 3, dvr: "DVR Hilook 8 Ch 2MP", hdd: "1TB", psu: "PSU 8 Port", connectors: 12, supporting: 3, cableMeters: 120 },
+  { cameras: 7, price: 7100000, priceFormatted: "Rp7.100.000", indoor: 3, outdoor: 4, dvr: "DVR Hilook 8 Ch 2MP", hdd: "1TB", psu: "PSU 8 Port", connectors: 14, supporting: 3.5, cableMeters: 140 },
+  { cameras: 8, price: 7800000, priceFormatted: "Rp7.800.000", indoor: 4, outdoor: 4, dvr: "DVR Hilook 8 Ch 2MP", hdd: "1TB", psu: "PSU 8 Port", connectors: 16, supporting: 4, cableMeters: 160 },
+  { cameras: 9, price: 9500000, priceFormatted: "Rp9.500.000", indoor: 4, outdoor: 5, dvr: "DVR Hilook 16 Ch 2MP", hdd: "1TB", psu: "PSU 16 Port", connectors: 18, supporting: 4.5, cableMeters: 180 },
+  { cameras: 10, price: 10200000, priceFormatted: "Rp10.200.000", indoor: 5, outdoor: 5, dvr: "DVR Hilook 16 Ch 2MP", hdd: "1TB", psu: "PSU 16 Port", connectors: 20, supporting: 5, cableMeters: 200 },
+  { cameras: 11, price: 11650000, priceFormatted: "Rp11.650.000", indoor: 5, outdoor: 6, dvr: "DVR Hilook 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 22, supporting: 5.5, cableMeters: 220 },
+  { cameras: 12, price: 12350000, priceFormatted: "Rp12.350.000", indoor: 6, outdoor: 6, dvr: "DVR Hilook 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 24, supporting: 6, cableMeters: 240 },
+  { cameras: 13, price: 13050000, priceFormatted: "Rp13.050.000", indoor: 6, outdoor: 7, dvr: "DVR Hilook 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 26, supporting: 6.5, cableMeters: 260 },
+  { cameras: 14, price: 13750000, priceFormatted: "Rp13.750.000", indoor: 7, outdoor: 7, dvr: "DVR Hilook 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 28, supporting: 7, cableMeters: 280 },
+  { cameras: 15, price: 14450000, priceFormatted: "Rp14.450.000", indoor: 7, outdoor: 8, dvr: "DVR Hilook 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 30, supporting: 7.5, cableMeters: 300 },
+  { cameras: 16, price: 15150000, priceFormatted: "Rp15.150.000", indoor: 8, outdoor: 8, dvr: "DVR Hilook 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 32, supporting: 8, cableMeters: 320 },
+];
+
+const HILOOK_2MP: Series = {
+  id: "hilook-2mp",
+  brand: "HiLook",
+  name: "HiLook",
+  resolution: "2MP Full HD",
+  title: "HiLook 2MP Full HD",
+  warranty: WARRANTY.hilook,
+  description:
+    "Kamera HiLook 2MP dari Hikvision. Sudah termasuk DVR, hard disk, kabel, pemasangan, dan setting ke HP.",
+  hasSpecs: true,
+  packages: HILOOK_2MP_ITEMIZED.map((item) =>
+    pkg(item.cameras, item.price, {
+      dvr: item.dvr,
+      hdd: item.hdd,
+      cable: `${item.cableMeters} meter`,
+    })
+  ),
+};
+
 // Seri lain — hanya 2, 4, 8, 16 kamera.
 // Spesifikasi DVR, hard disk, dan kabel belum diketahui, tidak ditulis.
 function otherSeries(
@@ -123,7 +160,6 @@ function otherSeries(
   };
 }
 
-const HILOOK_2MP = otherSeries("HiLook", "2MP", [2800000, 4200000, 7800000, 15150000]);
 const HIKVISION_2MP = otherSeries("Hikvision", "2MP", [3850000, 5600000, 10600000, 20600000]);
 const HILOOK_5MP = otherSeries("HiLook", "5MP", [3620000, 5437000, 10335000, 20332000]);
 const HIKVISION_5MP = otherSeries("Hikvision", "5MP", [5450000, 7700000, 14600000, 28550000]);

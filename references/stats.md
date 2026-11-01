@@ -73,12 +73,32 @@ Semua paket di situs ini (Loewix, HiLook, Hikvision) adalah kamera analog. Kabel
 - Coaxial RG59+P (kamera analog): Rp6.000 per meter. Ini satu-satunya tarif yang ditulis di situs.
 - Kabel LAN (kamera IP): Rp9.000 per meter. Belum relevan dan tidak ditulis di situs, karena belum ada paket IP camera. Tulis setelah pemilik menambah paket IP camera.
 
+## Paket CCTV HiLook 2MP (Dikonfirmasi pemilik 2026-11-01)
+Semua harga sudah dinaikkan Rp50.000 per paket. Termasuk unit kamera indoor/outdoor, DVR HiLook, hard disk, power supply, konektor BNC+DC, supporting device, kabel CCTV, jasa instalasi, dan setting ke HP. Garansi unit 2 tahun.
+
+| Kamera | Harga | Indoor | Outdoor | DVR | Hard disk | Power supply | BNC+DC | Supporting | Kabel |
+|---|---|---|---|---|---|---|---|---|---|
+| 2 | Rp2.800.000 | 1 | 1 | DVR Hilook 4 Ch 2MP | 500GB | PSU 4 Port | 4 | 1 | 40 meter |
+| 3 | Rp3.500.000 | 1 | 2 | DVR Hilook 4 Ch 2MP | 500GB | PSU 4 Port | 6 | 1.5 | 60 meter |
+| 4 | Rp4.200.000 | 2 | 2 | DVR Hilook 4 Ch 2MP | 500GB | PSU 4 Port | 8 | 2 | 80 meter |
+| 5 | Rp5.200.000 | 2 | 3 | DVR Hilook 8 Ch 2MP | 500GB | PSU 8 Port | 10 | 2.5 | 100 meter |
+| 6 | Rp6.400.000 | 3 | 3 | DVR Hilook 8 Ch 2MP | 1TB | PSU 8 Port | 12 | 3 | 120 meter |
+| 7 | Rp7.100.000 | 3 | 4 | DVR Hilook 8 Ch 2MP | 1TB | PSU 8 Port | 14 | 3.5 | 140 meter |
+| 8 | Rp7.800.000 | 4 | 4 | DVR Hilook 8 Ch 2MP | 1TB | PSU 8 Port | 16 | 4 | 160 meter |
+| 9 | Rp9.500.000 | 4 | 5 | DVR Hilook 16 Ch 2MP | 1TB | PSU 16 Port | 18 | 4.5 | 180 meter |
+| 10 | Rp10.200.000 | 5 | 5 | DVR Hilook 16 Ch 2MP | 1TB | PSU 16 Port | 20 | 5 | 200 meter |
+| 11 | Rp11.650.000 | 5 | 6 | DVR Hilook 16 Ch 2MP | 2TB | PSU 16 Port | 22 | 5.5 | 220 meter |
+| 12 | Rp12.350.000 | 6 | 6 | DVR Hilook 16 Ch 2MP | 2TB | PSU 16 Port | 24 | 6 | 240 meter |
+| 13 | Rp13.050.000 | 6 | 7 | DVR Hilook 16 Ch 2MP | 2TB | PSU 16 Port | 26 | 6.5 | 260 meter |
+| 14 | Rp13.750.000 | 7 | 7 | DVR Hilook 16 Ch 2MP | 2TB | PSU 16 Port | 28 | 7 | 280 meter |
+| 15 | Rp14.450.000 | 7 | 8 | DVR Hilook 16 Ch 2MP | 2TB | PSU 16 Port | 30 | 7.5 | 300 meter |
+| 16 | Rp15.150.000 | 8 | 8 | DVR Hilook 16 Ch 2MP | 2TB | PSU 16 Port | 32 | 8 | 320 meter |
+
 ## Seri lain (harga sudah termasuk kamera, DVR, hard disk, kabel, pemasangan, dan setting ke HP)
-Dikonfirmasi pemilik 2026-10-31. Hanya paket 2, 4, 8, dan 16 kamera. DVR, hard disk, dan kabel mengikuti jumlah kamera paket. Angka rinci (channel DVR, kapasitas hard disk, panjang kabel) untuk seri ini tidak ditulis di situs. Power supply, konektor, rekam suara, dan pilihan indoor atau outdoor hanya dikonfirmasi untuk paket Loewix.
+Dikonfirmasi pemilik 2026-10-31. Paket 2, 4, 8, dan 16 kamera. DVR, hard disk, dan kabel mengikuti jumlah kamera paket. Power supply, konektor, dan pilihan indoor atau outdoor sudah dikonfirmasi untuk paket Loewix dan HiLook 2MP.
 
 | Seri | 2 kamera | 4 kamera | 8 kamera | 16 kamera |
 |---|---|---|---|---|
-| HiLook 2MP | Rp2.800.000 | Rp4.200.000 | Rp7.800.000 | Rp15.150.000 |
 | Hikvision 2MP | Rp3.850.000 | Rp5.600.000 | Rp10.600.000 | Rp20.600.000 |
 | HiLook 5MP | Rp3.620.000 | Rp5.437.000 | Rp10.335.000 | Rp20.332.000 |
 | Hikvision 5MP | Rp5.450.000 | Rp7.700.000 | Rp14.600.000 | Rp28.550.000 |

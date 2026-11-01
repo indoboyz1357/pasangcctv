@@ -201,3 +201,31 @@ export const LOEWIX_FAQ: FaqItem[] = [
   },
 ];
 
+export const HILOOK_2MP_FAQ: FaqItem[] = [
+  {
+    question: "Berapa lama garansi unit untuk kamera dan DVR HiLook 2MP?",
+    answer:
+      "Paket CCTV HiLook 2MP memiliki masa garansi unit selama 2 tahun untuk perangkat kamera dan DVR HiLook.",
+  },
+  {
+    question: "Apa keunggulan kamera HiLook dibanding merek lain?",
+    answer:
+      "HiLook adalah lini produk dari Hikvision yang terkenal dengan durabilitas tinggi dan kualitas sensor gambar yang tajam dan stabil untuk pemantauan jangka panjang.",
+  },
+  {
+    question: "Apakah komposisi kamera indoor dan outdoor bebas disesuaikan?",
+    answer:
+      "Bisa. Komposisi kamera indoor dome untuk ruangan dalam dan outdoor bullet untuk area luar bebas Anda tentukan saat survei teknisi tanpa perubahan harga.",
+  },
+  {
+    question: "Komponen apa saja yang sudah termasuk dalam paket HiLook 2MP?",
+    answer:
+      "Seluruh paket sudah mencakup unit kamera HiLook 2MP, DVR HiLook, hard disk (500GB, 1TB, atau 2TB), power supply port, konektor BNC dan DC, supporting device, kabel CCTV, jasa instalasi teknisi, dan setting aplikasi HP.",
+  },
+  {
+    question: "Bagaimana sistem pembayaran untuk paket pasang HiLook 2MP?",
+    answer:
+      "Untuk paket 2 sampai 8 kamera, pembayaran dilakukan setelah instalasi selesai dan sistem aktif di HP. Untuk paket 9 sampai 16 kamera, berlaku uang muka 50 persen dan pelunasan setelah pemasangan tuntas.",
+  },
+];
+

@@ -54,6 +54,14 @@ export function Footer() {
                       • Paket Loewix 2MP ColorVu
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/paket-cctv/hilook-2mp/"
+                      className="hover:text-white transition-colors"
+                    >
+                      • Paket HiLook 2MP Full HD
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li>
