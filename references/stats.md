@@ -94,12 +94,32 @@ Semua harga sudah dinaikkan Rp50.000 per paket. Termasuk unit kamera indoor/outd
 | 15 | Rp14.450.000 | 7 | 8 | DVR Hilook 16 Ch 2MP | 2TB | PSU 16 Port | 30 | 7.5 | 300 meter |
 | 16 | Rp15.150.000 | 8 | 8 | DVR Hilook 16 Ch 2MP | 2TB | PSU 16 Port | 32 | 8 | 320 meter |
 
+## Paket CCTV Hikvision 2MP (Dikonfirmasi pemilik 2026-11-01)
+Semua harga sudah dinaikkan Rp50.000 per paket. Termasuk unit kamera indoor/outdoor, DVR Hikvision, hard disk, power supply, konektor BNC+DC, supporting device, kabel CCTV, jasa instalasi, dan setting ke HP. Garansi unit 2 tahun.
+
+| Kamera | Harga | Indoor | Outdoor | DVR | Hard disk | Power supply | BNC+DC | Supporting | Kabel |
+|---|---|---|---|---|---|---|---|---|---|
+| 2 | Rp3.900.000 | 1 | 1 | DVR Hikvision 4 Ch 2MP | 500GB | PSU 4 Port | 4 | 1 | 40 meter |
+| 3 | Rp4.750.000 | 1 | 2 | DVR Hikvision 4 Ch 2MP | 500GB | PSU 4 Port | 6 | 1.5 | 60 meter |
+| 4 | Rp5.600.000 | 2 | 2 | DVR Hikvision 4 Ch 2MP | 500GB | PSU 4 Port | 8 | 2 | 80 meter |
+| 5 | Rp7.500.000 | 2 | 3 | DVR Hikvision 8 Ch 2MP | 500GB | PSU 8 Port | 10 | 2.5 | 100 meter |
+| 6 | Rp8.850.000 | 3 | 3 | DVR Hikvision 8 Ch 2MP | 1TB | PSU 8 Port | 12 | 3 | 120 meter |
+| 7 | Rp9.750.000 | 3 | 4 | DVR Hikvision 8 Ch 2MP | 1TB | PSU 8 Port | 14 | 3.5 | 140 meter |
+| 8 | Rp10.600.000 | 4 | 4 | DVR Hikvision 8 Ch 2MP | 1TB | PSU 8 Port | 16 | 4 | 160 meter |
+| 9 | Rp13.800.000 | 4 | 5 | DVR Hikvision 16 Ch 2MP | 1TB | PSU 16 Port | 18 | 4.5 | 180 meter |
+| 10 | Rp14.650.000 | 5 | 5 | DVR Hikvision 16 Ch 2MP | 1TB | PSU 16 Port | 20 | 5 | 200 meter |
+| 11 | Rp16.250.000 | 5 | 6 | DVR Hikvision 16 Ch 2MP | 2TB | PSU 16 Port | 22 | 5.5 | 220 meter |
+| 12 | Rp17.150.000 | 6 | 6 | DVR Hikvision 16 Ch 2MP | 2TB | PSU 16 Port | 24 | 6 | 240 meter |
+| 13 | Rp18.000.000 | 6 | 7 | DVR Hikvision 16 Ch 2MP | 2TB | PSU 16 Port | 26 | 6.5 | 260 meter |
+| 14 | Rp18.850.000 | 7 | 7 | DVR Hikvision 16 Ch 2MP | 2TB | PSU 16 Port | 28 | 7 | 280 meter |
+| 15 | Rp19.750.000 | 7 | 8 | DVR Hikvision 16 Ch 2MP | 2TB | PSU 16 Port | 30 | 7.5 | 300 meter |
+| 16 | Rp20.600.000 | 8 | 8 | DVR Hikvision 16 Ch 2MP | 2TB | PSU 16 Port | 32 | 8 | 320 meter |
+
 ## Seri lain (harga sudah termasuk kamera, DVR, hard disk, kabel, pemasangan, dan setting ke HP)
-Dikonfirmasi pemilik 2026-10-31. Paket 2, 4, 8, dan 16 kamera. DVR, hard disk, dan kabel mengikuti jumlah kamera paket. Power supply, konektor, dan pilihan indoor atau outdoor sudah dikonfirmasi untuk paket Loewix dan HiLook 2MP.
+Dikonfirmasi pemilik 2026-10-31. Paket 2, 4, 8, dan 16 kamera. DVR, hard disk, dan kabel mengikuti jumlah kamera paket. Power supply, konektor, dan pilihan indoor atau outdoor sudah dikonfirmasi untuk paket Loewix, HiLook 2MP, dan Hikvision 2MP.
 
 | Seri | 2 kamera | 4 kamera | 8 kamera | 16 kamera |
 |---|---|---|---|---|
-| Hikvision 2MP | Rp3.850.000 | Rp5.600.000 | Rp10.600.000 | Rp20.600.000 |
 | HiLook 5MP | Rp3.620.000 | Rp5.437.000 | Rp10.335.000 | Rp20.332.000 |
 | Hikvision 5MP | Rp5.450.000 | Rp7.700.000 | Rp14.600.000 | Rp28.550.000 |
 

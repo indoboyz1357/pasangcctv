@@ -19,6 +19,7 @@ const pages = [
   { file: "kontak/index.html", url: "https://pasangcctv.my.id/kontak/", keyword: "kontak pasang cctv" },
   { file: "paket-cctv/loewix-2mp/index.html", url: "https://pasangcctv.my.id/paket-cctv/loewix-2mp/", keyword: "paket cctv loewix 2mp" },
   { file: "paket-cctv/hilook-2mp/index.html", url: "https://pasangcctv.my.id/paket-cctv/hilook-2mp/", keyword: "paket cctv hilook 2mp" },
+  { file: "paket-cctv/hikvision-2mp/index.html", url: "https://pasangcctv.my.id/paket-cctv/hikvision-2mp/", keyword: "paket cctv hikvision 2mp" },
 ];
 
 let failures = 0;

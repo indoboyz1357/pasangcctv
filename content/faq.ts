@@ -229,3 +229,31 @@ export const HILOOK_2MP_FAQ: FaqItem[] = [
   },
 ];
 
+export const HIKVISION_2MP_FAQ: FaqItem[] = [
+  {
+    question: "Berapa lama masa garansi untuk paket CCTV Hikvision 2MP?",
+    answer:
+      "Perangkat kamera dan DVR Hikvision pada paket ini dilindungi garansi unit selama 2 tahun.",
+  },
+  {
+    question: "Mengapa memilih brand Hikvision dibanding merek kamera lainnya?",
+    answer:
+      "Hikvision merupakan produsen perangkat pengawas nomor satu di dunia yang digunakan secara luas pada perbankan, instansi, bandara, dan perkantoran karena ketahanan sensor dan keandalan sistemnya yang telah teruji bertahun-tahun.",
+  },
+  {
+    question: "Apakah paket Hikvision 2MP ini sudah termasuk hard disk dan pemasangan?",
+    answer:
+      "Ya. Seluruh harga sudah termasuk unit kamera indoor dan outdoor Hikvision 2MP, DVR Hikvision, hard disk pengawasan, power supply port, konektor BNC dan DC, supporting device, kabel CCTV, jasa instalasi, dan setting ke HP.",
+  },
+  {
+    question: "Bagaimana jika denah bangunan saya membutuhkan kabel melebihi jatah paket?",
+    answer:
+      "Setiap paket sudah dibekali kuota kabel coaxial yang cukup. Jika terdapat kebutuhan kabel tambahan di lapangan, biayanya dihitung transparan sebesar Rp6.000 per meter untuk kabel coaxial RG59+P.",
+  },
+  {
+    question: "Kapan pembayaran paket pasang Hikvision 2MP dilakukan?",
+    answer:
+      "Untuk paket 2 sampai 8 kamera, Anda membayar setelah seluruh kamera terpasang rapi dan sistem aktif di smartphone. Untuk paket 9 sampai 16 kamera, berlaku uang muka 50 persen dan pelunasan diselesaikan setelah serah terima.",
+  },
+];
+

@@ -124,6 +124,43 @@ const HILOOK_2MP: Series = {
   ),
 };
 
+export const HIKVISION_2MP_ITEMIZED = [
+  { cameras: 2, price: 3900000, priceFormatted: "Rp3.900.000", indoor: 1, outdoor: 1, dvr: "DVR Hikvision 4 Ch 2MP", hdd: "500GB", psu: "PSU 4 Port", connectors: 4, supporting: 1, cableMeters: 40 },
+  { cameras: 3, price: 4750000, priceFormatted: "Rp4.750.000", indoor: 1, outdoor: 2, dvr: "DVR Hikvision 4 Ch 2MP", hdd: "500GB", psu: "PSU 4 Port", connectors: 6, supporting: 1.5, cableMeters: 60 },
+  { cameras: 4, price: 5600000, priceFormatted: "Rp5.600.000", indoor: 2, outdoor: 2, dvr: "DVR Hikvision 4 Ch 2MP", hdd: "500GB", psu: "PSU 4 Port", connectors: 8, supporting: 2, cableMeters: 80 },
+  { cameras: 5, price: 7500000, priceFormatted: "Rp7.500.000", indoor: 2, outdoor: 3, dvr: "DVR Hikvision 8 Ch 2MP", hdd: "500GB", psu: "PSU 8 Port", connectors: 10, supporting: 2.5, cableMeters: 100 },
+  { cameras: 6, price: 8850000, priceFormatted: "Rp8.850.000", indoor: 3, outdoor: 3, dvr: "DVR Hikvision 8 Ch 2MP", hdd: "1TB", psu: "PSU 8 Port", connectors: 12, supporting: 3, cableMeters: 120 },
+  { cameras: 7, price: 9750000, priceFormatted: "Rp9.750.000", indoor: 3, outdoor: 4, dvr: "DVR Hikvision 8 Ch 2MP", hdd: "1TB", psu: "PSU 8 Port", connectors: 14, supporting: 3.5, cableMeters: 140 },
+  { cameras: 8, price: 10600000, priceFormatted: "Rp10.600.000", indoor: 4, outdoor: 4, dvr: "DVR Hikvision 8 Ch 2MP", hdd: "1TB", psu: "PSU 8 Port", connectors: 16, supporting: 4, cableMeters: 160 },
+  { cameras: 9, price: 13800000, priceFormatted: "Rp13.800.000", indoor: 4, outdoor: 5, dvr: "DVR Hikvision 16 Ch 2MP", hdd: "1TB", psu: "PSU 16 Port", connectors: 18, supporting: 4.5, cableMeters: 180 },
+  { cameras: 10, price: 14650000, priceFormatted: "Rp14.650.000", indoor: 5, outdoor: 5, dvr: "DVR Hikvision 16 Ch 2MP", hdd: "1TB", psu: "PSU 16 Port", connectors: 20, supporting: 5, cableMeters: 200 },
+  { cameras: 11, price: 16250000, priceFormatted: "Rp16.250.000", indoor: 5, outdoor: 6, dvr: "DVR Hikvision 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 22, supporting: 5.5, cableMeters: 220 },
+  { cameras: 12, price: 17150000, priceFormatted: "Rp17.150.000", indoor: 6, outdoor: 6, dvr: "DVR Hikvision 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 24, supporting: 6, cableMeters: 240 },
+  { cameras: 13, price: 18000000, priceFormatted: "Rp18.000.000", indoor: 6, outdoor: 7, dvr: "DVR Hikvision 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 26, supporting: 6.5, cableMeters: 260 },
+  { cameras: 14, price: 18850000, priceFormatted: "Rp18.850.000", indoor: 7, outdoor: 7, dvr: "DVR Hikvision 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 28, supporting: 7, cableMeters: 280 },
+  { cameras: 15, price: 19750000, priceFormatted: "Rp19.750.000", indoor: 7, outdoor: 8, dvr: "DVR Hikvision 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 30, supporting: 7.5, cableMeters: 300 },
+  { cameras: 16, price: 20600000, priceFormatted: "Rp20.600.000", indoor: 8, outdoor: 8, dvr: "DVR Hikvision 16 Ch 2MP", hdd: "2TB", psu: "PSU 16 Port", connectors: 32, supporting: 8, cableMeters: 320 },
+];
+
+const HIKVISION_2MP: Series = {
+  id: "hikvision-2mp",
+  brand: "Hikvision",
+  name: "Hikvision",
+  resolution: "2MP Full HD",
+  title: "Hikvision 2MP Full HD",
+  warranty: WARRANTY.hikvision,
+  description:
+    "Kamera Hikvision 2MP standar industri global teruji. Sudah termasuk DVR, hard disk, kabel, pemasangan, dan setting ke HP.",
+  hasSpecs: true,
+  packages: HIKVISION_2MP_ITEMIZED.map((item) =>
+    pkg(item.cameras, item.price, {
+      dvr: item.dvr,
+      hdd: item.hdd,
+      cable: `${item.cableMeters} meter`,
+    })
+  ),
+};
+
 // Seri lain — hanya 2, 4, 8, 16 kamera.
 // Spesifikasi DVR, hard disk, dan kabel belum diketahui, tidak ditulis.
 function otherSeries(
@@ -160,7 +197,6 @@ function otherSeries(
   };
 }
 
-const HIKVISION_2MP = otherSeries("Hikvision", "2MP", [3850000, 5600000, 10600000, 20600000]);
 const HILOOK_5MP = otherSeries("HiLook", "5MP", [3620000, 5437000, 10335000, 20332000]);
 const HIKVISION_5MP = otherSeries("Hikvision", "5MP", [5450000, 7700000, 14600000, 28550000]);
 

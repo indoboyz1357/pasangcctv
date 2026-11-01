@@ -26,9 +26,9 @@ const PACKAGE_LINKS = [
     highlight: false,
   },
   {
-    href: "/paket-cctv/#hikvision-2mp",
+    href: "/paket-cctv/hikvision-2mp/",
     title: "Hikvision 2MP Full HD",
-    desc: "Standar industri paling andal",
+    desc: "2–16 kamera komplit, standar industri global",
     highlight: false,
   },
   {
