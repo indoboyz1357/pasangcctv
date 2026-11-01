@@ -45,6 +45,12 @@ export function Navbar() {
           >
             Tentang Kami
           </Link>
+          <Link
+            href="/kontak/"
+            className="text-text-secondary hover:text-white transition-colors"
+          >
+            Kontak
+          </Link>
           <WhatsAppButton
             message={WA_MESSAGE}
             iconClassName="w-4 h-4"
@@ -96,6 +102,13 @@ export function Navbar() {
             className="text-text-secondary hover:text-white transition-colors py-2"
           >
             Tentang Kami
+          </Link>
+          <Link
+            href="/kontak/"
+            onClick={() => setOpen(false)}
+            className="text-text-secondary hover:text-white transition-colors py-2"
+          >
+            Kontak
           </Link>
           <WhatsAppButton
             message={WA_MESSAGE}

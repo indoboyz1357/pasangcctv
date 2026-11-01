@@ -42,6 +42,15 @@ export const PAGES = {
     ogAlt: "PasangCCTV, tim pasang CCTV untuk Jabodetabek",
     lastModified: "2026-10-31",
   },
+  kontak: {
+    path: "/kontak/",
+    title: `Kontak Pasang CCTV Jabodetabek: Survei Gratis | ${SITE.name}`,
+    description:
+      "Hubungi kontak pasang CCTV untuk konsultasi denah dan survei lokasi gratis se-Jabodetabek. Kantor buka 24 jam di Ciledug, Tangerang. Tanya via WhatsApp.",
+    ogImage: "/og/home.png",
+    ogAlt: "PasangCCTV, kontak dan layanan survei pasang CCTV Jabodetabek",
+    lastModified: "2026-11-01",
+  },
 } as const satisfies Record<string, PageSeo>;
 
 export function buildMetadata(page: PageSeo): Metadata {

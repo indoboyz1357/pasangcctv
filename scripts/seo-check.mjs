@@ -15,6 +15,7 @@ const pages = [
   { file: "index.html", url: "https://pasangcctv.my.id/", keyword: "pasang cctv" },
   { file: "paket-cctv/index.html", url: "https://pasangcctv.my.id/paket-cctv/", keyword: "paket cctv" },
   { file: "tentang/index.html", url: "https://pasangcctv.my.id/tentang/", keyword: "tim pasang cctv" },
+  { file: "kontak/index.html", url: "https://pasangcctv.my.id/kontak/", keyword: "kontak pasang cctv" },
 ];
 
 let failures = 0;

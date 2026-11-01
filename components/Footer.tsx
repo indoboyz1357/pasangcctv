@@ -54,6 +54,14 @@ export function Footer() {
                   Tentang Kami
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/kontak/"
+                  className="hover:text-white transition-colors"
+                >
+                  Kontak
+                </Link>
+              </li>
             </ul>
           </div>
 

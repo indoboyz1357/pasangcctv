@@ -116,3 +116,32 @@ export const ABOUT_FAQ: FaqItem[] = [
       "Ya. Pada serah terima, teknisi mengatur pemantauan dari HP dan mengajarkan cara melihat playback atau rekaman.",
   },
 ];
+
+export const CONTACT_FAQ: FaqItem[] = [
+  {
+    question: "Apakah survei lokasi ke rumah atau kantor benar-benar gratis?",
+    answer:
+      "Ya, survei lokasi gratis tanpa biaya untuk seluruh wilayah Jabodetabek. Teknisi kami datang langsung ke lokasi untuk mengukur kebutuhan kabel dan mengecek potensi titik buta (blind spot).",
+  },
+  {
+    question: "Bagaimana cara cepat memesan jadwal survei teknisi?",
+    answer:
+      `Hubungi kontak pasang CCTV kami via WhatsApp di ${CONTACT.phone}. Sebutkan jenis tempat (rumah, ruko, kantor, atau gudang), perkiraan jumlah titik kamera, dan alamat lengkap Anda.`,
+  },
+  {
+    question: "Apakah kantor atau layanan konsultasi buka setiap hari?",
+    answer:
+      "Kantor kami di Paninggilan, Ciledug, Kota Tangerang buka 24 jam setiap hari, sehingga Anda dapat menghubungi kami kapan saja untuk konsultasi maupun penjadwalan survei.",
+  },
+  {
+    question: "Apakah wajib jadi memesan paket setelah disurvei?",
+    answer:
+      "Tidak wajib. Survei lokasi kami sediakan untuk memberikan masukan denah dan rincian kebutuhan teknis yang transparan tanpa ikatan pemesanan.",
+  },
+  {
+    question: "Bagaimana sistem pembayaran setelah pemasangan?",
+    answer:
+      "Untuk paket 2 sampai 8 kamera, pembayaran dilakukan setelah seluruh unit terpasang dan aplikasi pemantau aktif di HP. Untuk paket 9 sampai 16 kamera, berlaku uang muka 50 persen dan pelunasan setelah pekerjaan selesai.",
+  },
+];
+
