@@ -99,6 +99,12 @@ for (const page of pages) {
     }
   }
 
+  // ── Pemeriksaan Breadcrumb (untuk sub-halaman) ──
+  if (page.file !== "index.html") {
+    check(/aria-label="Breadcrumb"/.test(html), "elemen visual breadcrumb ada");
+    check(html.includes('"BreadcrumbList"'), "schema BreadcrumbList ada di JSON-LD");
+  }
+
   const imgs = [...html.matchAll(/<img[^>]*>/g)].map((m) => m[0]);
   for (const img of imgs) {
     const ok = /alt="[^"]+"/.test(img) && /width="/.test(img) && /height="/.test(img);
