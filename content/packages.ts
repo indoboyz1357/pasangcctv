@@ -1,7 +1,7 @@
 // Data paket — semua angka dari references/stats.md
 // Jangan menambah atau mengubah harga tanpa memperbarui stats.md.
 // Harga diperbarui 2026-10-31: +Rp50.000 per paket (Loewix, HiLook 2MP, Hikvision 2MP)
-// dan +Rp100.000 per paket (HiLook 5MP, Hikvision 5MP). Lihat stats.md.
+// Harga diperbarui 2026-11-01: +Rp50.000 per paket (HiLook 5MP). Lihat stats.md.
 
 import { WARRANTY } from "@/content/site";
 
@@ -197,7 +197,43 @@ function otherSeries(
   };
 }
 
-const HILOOK_5MP = otherSeries("HiLook", "5MP", [3620000, 5437000, 10335000, 20332000]);
+export const HILOOK_5MP_ITEMIZED = [
+  { cameras: 2,  price: 3550000,  priceFormatted: "Rp3.550.000",  indoor: 1, outdoor: 1,  dvr: "DVR Hilook 4 Ch 5MP",  hdd: "500GB", psu: "PSU 4 Port",   connectors: 4,  supporting: 1,   cableMeters: 40  },
+  { cameras: 3,  price: 4500000,  priceFormatted: "Rp4.500.000",  indoor: 1, outdoor: 2,  dvr: "DVR Hilook 4 Ch 5MP",  hdd: "500GB", psu: "PSU 4 Port",   connectors: 6,  supporting: 1.5, cableMeters: 60  },
+  { cameras: 4,  price: 5400000,  priceFormatted: "Rp5.400.000",  indoor: 2, outdoor: 2,  dvr: "DVR Hilook 4 Ch 5MP",  hdd: "500GB", psu: "PSU 4 Port",   connectors: 8,  supporting: 2,   cableMeters: 80  },
+  { cameras: 5,  price: 7050000,  priceFormatted: "Rp7.050.000",  indoor: 2, outdoor: 3,  dvr: "DVR Hilook 8 Ch 5MP",  hdd: "500GB", psu: "PSU 8 Port",   connectors: 10, supporting: 2.5, cableMeters: 100 },
+  { cameras: 6,  price: 8450000,  priceFormatted: "Rp8.450.000",  indoor: 3, outdoor: 3,  dvr: "DVR Hilook 8 Ch 5MP",  hdd: "1TB",   psu: "PSU 8 Port",   connectors: 12, supporting: 3,   cableMeters: 120 },
+  { cameras: 7,  price: 9400000,  priceFormatted: "Rp9.400.000",  indoor: 3, outdoor: 4,  dvr: "DVR Hilook 8 Ch 5MP",  hdd: "1TB",   psu: "PSU 8 Port",   connectors: 14, supporting: 3.5, cableMeters: 140 },
+  { cameras: 8,  price: 10300000, priceFormatted: "Rp10.300.000", indoor: 4, outdoor: 4,  dvr: "DVR Hilook 8 Ch 5MP",  hdd: "1TB",   psu: "PSU 8 Port",   connectors: 16, supporting: 4,   cableMeters: 160 },
+  { cameras: 9,  price: 13200000, priceFormatted: "Rp13.200.000", indoor: 4, outdoor: 5,  dvr: "DVR Hilook 16 Ch 5MP", hdd: "1TB",   psu: "PSU 16 Port",  connectors: 18, supporting: 4.5, cableMeters: 180 },
+  { cameras: 10, price: 14100000, priceFormatted: "Rp14.100.000", indoor: 5, outdoor: 5,  dvr: "DVR Hilook 16 Ch 5MP", hdd: "1TB",   psu: "PSU 16 Port",  connectors: 20, supporting: 5,   cableMeters: 200 },
+  { cameras: 11, price: 15750000, priceFormatted: "Rp15.750.000", indoor: 5, outdoor: 6,  dvr: "DVR Hilook 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 22, supporting: 5.5, cableMeters: 220 },
+  { cameras: 12, price: 16650000, priceFormatted: "Rp16.650.000", indoor: 6, outdoor: 6,  dvr: "DVR Hilook 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 24, supporting: 6,   cableMeters: 240 },
+  { cameras: 13, price: 17550000, priceFormatted: "Rp17.550.000", indoor: 6, outdoor: 7,  dvr: "DVR Hilook 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 26, supporting: 6.5, cableMeters: 260 },
+  { cameras: 14, price: 18450000, priceFormatted: "Rp18.450.000", indoor: 7, outdoor: 7,  dvr: "DVR Hilook 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 28, supporting: 7,   cableMeters: 280 },
+  { cameras: 15, price: 19400000, priceFormatted: "Rp19.400.000", indoor: 7, outdoor: 8,  dvr: "DVR Hilook 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 30, supporting: 7.5, cableMeters: 300 },
+  { cameras: 16, price: 20300000, priceFormatted: "Rp20.300.000", indoor: 8, outdoor: 8,  dvr: "DVR Hilook 16 Ch 5MP", hdd: "2TB",   psu: "PSU 16 Port",  connectors: 32, supporting: 8,   cableMeters: 320 },
+];
+
+const HILOOK_5MP: Series = {
+  id: "hilook-5mp",
+  brand: "HiLook",
+  name: "HiLook",
+  resolution: "5MP Ultra HD",
+  title: "HiLook 5MP Ultra HD",
+  warranty: WARRANTY.hilook,
+  description:
+    "Kamera HiLook 5MP, sekitar 2,5 kali jumlah piksel dibanding 2MP. Sudah termasuk DVR, hard disk, kabel, pemasangan, dan setting ke HP.",
+  hasSpecs: true,
+  packages: HILOOK_5MP_ITEMIZED.map((item) =>
+    pkg(item.cameras, item.price, {
+      dvr: item.dvr,
+      hdd: item.hdd,
+      cable: `${item.cableMeters} meter`,
+    })
+  ),
+};
+
 const HIKVISION_5MP = otherSeries("Hikvision", "5MP", [5450000, 7700000, 14600000, 28550000]);
 
 // Urutan tampil di halaman: Loewix lebih dulu, lalu 2MP, lalu 5MP.

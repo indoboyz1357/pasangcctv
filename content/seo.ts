@@ -87,6 +87,15 @@ export const PAGES = {
     ogAlt: "PasangCCTV, paket CCTV Hikvision 2MP Full HD terpasang",
     lastModified: "2026-11-01",
   },
+  hilook5mp: {
+    path: "/paket-cctv/hilook-5mp/",
+    title: `Paket CCTV HiLook 5MP Ultra HD | ${SITE.name}`,
+    description:
+      "Harga paket CCTV HiLook 5MP Ultra HD 2 sampai 16 kamera terpasang mulai Rp3.550.000. Resolusi tinggi 3K, garansi 2 tahun, gratis survei Jabodetabek. WA kami.",
+    ogImage: "/og/paket.png",
+    ogAlt: "PasangCCTV, paket CCTV HiLook 5MP Ultra HD terpasang",
+    lastModified: "2026-11-01",
+  },
 } as const satisfies Record<string, PageSeo>;
 
 export function buildMetadata(page: PageSeo): Metadata {

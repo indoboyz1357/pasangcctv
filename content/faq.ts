@@ -229,6 +229,34 @@ export const HILOOK_2MP_FAQ: FaqItem[] = [
   },
 ];
 
+export const HILOOK_5MP_FAQ: FaqItem[] = [
+  {
+    question: "Berapa lama garansi unit untuk paket CCTV HiLook 5MP?",
+    answer:
+      "Seluruh perangkat kamera dan DVR HiLook 5MP pada paket ini dilindungi garansi unit selama 2 tahun.",
+  },
+  {
+    question: "Apa perbedaan utama kamera HiLook 5MP dibanding 2MP?",
+    answer:
+      "Resolusi 5MP atau 3K (2960×1665 piksel) menghasilkan sekitar 2,5 kali jumlah piksel lebih banyak dibanding 2MP Full HD. Hasilnya, detail wajah dan nomor plat kendaraan dapat terbaca lebih jauh dan lebih tajam, sehingga paket ini cocok untuk area parkir luas, halaman usaha, atau gudang besar.",
+  },
+  {
+    question: "Apakah komposisi kamera indoor dan outdoor bisa disesuaikan?",
+    answer:
+      "Bisa. Komposisi indoor dome dan outdoor bullet bebas ditentukan saat survei teknisi sesuai denah dan kebutuhan titik kamera, tanpa perbedaan biaya.",
+  },
+  {
+    question: "Komponen apa saja yang sudah termasuk dalam paket HiLook 5MP?",
+    answer:
+      "Setiap paket sudah mencakup unit kamera HiLook 5MP, DVR HiLook 5MP, hard disk (500GB, 1TB, atau 2TB sesuai jumlah kamera), power supply port, konektor BNC dan DC, supporting device, kabel CCTV, jasa instalasi teknisi, dan konfigurasi aplikasi pemantauan di HP.",
+  },
+  {
+    question: "Bagaimana sistem pembayaran untuk paket HiLook 5MP?",
+    answer:
+      "Untuk paket 2 sampai 8 kamera, pembayaran dilakukan setelah instalasi selesai dan sistem aktif di HP. Untuk paket 9 sampai 16 kamera, berlaku uang muka 50 persen dan pelunasan setelah pemasangan tuntas.",
+  },
+];
+
 export const HIKVISION_2MP_FAQ: FaqItem[] = [
   {
     question: "Berapa lama masa garansi untuk paket CCTV Hikvision 2MP?",

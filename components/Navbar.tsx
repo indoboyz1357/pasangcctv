@@ -32,9 +32,9 @@ const PACKAGE_LINKS = [
     highlight: false,
   },
   {
-    href: "/paket-cctv/#hilook-5mp",
+    href: "/paket-cctv/hilook-5mp/",
     title: "HiLook 5MP Ultra HD",
-    desc: "Gambar tajam resolusi tinggi",
+    desc: "2–16 kamera, resolusi 3K super tajam",
     highlight: false,
   },
   {
